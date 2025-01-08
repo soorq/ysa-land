@@ -1,0 +1,32 @@
+.ysa-wrap {
+    height: 100%;
+
+    &.-inverse {
+        min-height: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+
+        background: $color-primary;
+    }
+}
+
+.ysa-content {
+    height: 100%;
+    overflow: auto;
+}
+
+.ysa-container {
+    @media (min-width: $screen-sm-min) {
+        padding: 0 30px;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        padding: 0 60px;
+    }
+}
+
+.ysa-bound {
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "ysa-landing",
+    "version": "0.0.0",
+    "ignore": [".jshintrc", "**/*.txt"],
+    "dependencies": {
+        "bootstrap-sass": "3.3.7",
+        "modernizr": "2.8.3",
+        "detectizr": "2.2.0",
+        "svg4everybody": "2.x",
+        "fastclick": "1.0.6",
+        "wheel-indicator": "1.1.4",
+        "gsap": "1.x",
+        "owl.carousel": "2.2.0",
+        "three.js": "0.85.0",
+        "aos": "2.1.1",
+        "fancybox": "3.1.20"
+    },
+    "devDependencies": {},
+    "overrides": {
+        "modernizr": {
+            "main": "modernizr.js"
+        },
+        "dedectizr": {
+            "main": "dist/detectizr.js"
+        }
+    }
+}

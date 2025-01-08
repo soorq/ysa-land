@@ -1,0 +1,16 @@
+.ysa-modal.ysa-modal_full#modal-burger
+    .ysa-modal_full-close
+        a(data-dismiss="modal")
+            +svgsprite('times')
+    .ysa-modal_full-dialog
+        .ysa-burger
+            a.ysa-burger-item(href="/contacts/") #{__.contacts.title}
+            a.ysa-burger-item(href="/price/")
+                button.ysa-btn.ysa-btn_flat.-xl
+                    span #{__.price.title}
+            a.ysa-burger-item(href=(systemLink + "/login"))
+                button.ysa-btn.ysa-btn_flat.-xl.-white
+                    span #{__.navbar.reg}
+            .ysa-burger-lang
+                a.ysa-burger-lang-item(href=selfDomainRu, class = (__.lang == "ru" ? "-active" : "")) #{__.navbar.lang[0]}
+                a.ysa-burger-lang-item(href=selfDomainEn, class=(__.lang == "en" ? "-active" : "")) #{__.navbar.lang[1]}

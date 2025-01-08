@@ -1,0 +1,190 @@
+.ysa-contacts {
+    font-family: $font-family-secondary;
+
+    &-container {
+        padding: 0 36px 0 43px;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 30px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            padding: 0 60px;
+        }
+    }
+
+    &-head {
+        margin: 0 0 36px 0;
+
+        @media (min-width: $screen-sm-min) {
+            display: flex;
+            margin: 0 0 40px 0;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            margin: 0 0 54px 0;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            margin: 0 0 67px 0;
+        }
+
+        &-item {
+            margin: 0 0 23px 0;
+
+            &:first-child {
+                @media (min-width: $screen-md-min) {
+                    padding: 0 45px 0 55px;
+                }
+
+                @media (min-width: $screen-lg-min) {
+                    padding: 0 80px 0 110px;
+                }
+            }
+
+            @media (min-width: $screen-sm-min) {
+                padding: 0 40px;
+            }
+
+            @media (min-width: $screen-md-min) {
+                padding: 0 45px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                padding: 0 80px;
+            }
+        }
+
+        &-title {
+            margin: 0 0 6px 0;
+
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            line-height: 33px;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            @media (min-width: $screen-md-min) {
+                margin: 0 0 11px 0;
+
+                font-size: 18px;
+                letter-spacing: 0.34px;
+            }
+        }
+
+        &-text {
+            font-size: 14px;
+            letter-spacing: 0.26px;
+            line-height: 24px;
+            font-weight: 300;
+
+            @media (min-width: $screen-md-min) {
+                font-size: 16px;
+                letter-spacing: 0.3px;
+                line-height: 26px;
+            }
+        }
+    }
+
+    &-map {
+        height: 348px;
+        margin: 0 0 30px 0;
+
+        @media (min-width: $screen-sm-min) {
+            height: 621px;
+            margin: 0 0 37px 0;
+        }
+
+        @media (min-width: $screen-md-min) {
+            margin: 0 0 41px 0;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            height: 527px;
+            margin: 0 0 44px 0;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            height: 607px;
+            margin: 0 0 39px 0;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        a[rel="noopener"] {
+            display: none !important;
+        }
+
+        .gm-style-cc {
+            display: none !important;
+        }
+
+        .gm-bundled-control {
+            right: 60px !important;
+            bottom: 105px !important;
+        }
+
+        img[src="../assets/img/marker.svg"] {
+            width: 40px !important;
+            height: 40px !important;
+
+            @media (min-width: $screen-sm-min) {
+                width: 63px !important;
+                height: 63px !important;
+            }
+        }
+    }
+
+    &-info {
+        margin: 0 0 37px 0;
+
+        @media (min-width: $screen-md-min) {
+            margin: 0 0 60px 0;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            margin: 0 0 69px 0;
+        }
+
+        &-item {
+            &:first-child {
+                margin: 0;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 0 0 32px;
+            }
+
+            @media (min-width: $screen-md-min) {
+                margin: 0 0 0 40px;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                margin: 0 0 0 80px;
+            }
+        }
+
+        &-text {
+            font-size: 10px;
+            letter-spacing: 0.19px;
+            line-height: 20px;
+            font-weight: 300;
+
+            @media (min-width: $screen-md-min) {
+                font-size: 12px;
+                letter-spacing: 0.22px;
+                line-height: 27px;
+            }
+
+            @media (min-width: $screen-xl-min) {
+                font-size: 14px;
+                letter-spacing: 0.26px;
+            }
+        }
+    }
+}

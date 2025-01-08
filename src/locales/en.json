@@ -1,0 +1,368 @@
+{
+    "lang": "en",
+    "lng": "Eng",
+    "language": "English",
+    "navbar": {
+        "reg": "Sign In",
+        "lang": [
+            "Рус",
+            "Eng"
+        ]
+    },
+    "intro": {
+        "title": "Your Sport Agent",
+        "description": "Your Sport Agent — hockey oriented, scouting platform.",
+        "slides": [
+            {
+                "title": "your sport agent",
+                "header": "Clubs",
+                "text": ["Search for new players, track candidate progress, and easily converse and share info with scouts."],
+                "more": "More"
+            },
+            {
+                "title": "your sport agent",
+                "header": "Scouts",
+                "text": ["Search and follow players, keep records, and discuss candidates with your colleagues."],
+                "more": "More"
+            },
+            {
+                "title": "your sport agent",
+                "header": "Agents",
+                "text": ["An extensive database of players with complete game stats right in front of you. Track their progress and suggest working together."],
+                "more": "More"
+            },
+            {
+                "title": "your sport agent",
+                "header": "Coaches",
+                "text": ["Learn how your rivals play and prep your team for the big game by analyzing key tactical moments on video."],
+                "more": "More"
+            },
+            {
+                "title": "your sport agent",
+                "header": "Players",
+                "text": ["Career in hockey is not only work, sweat, blood and perseverance. Here important to show yourself in the right time. You will find your teammates, coach, agent and rival. You can assess yourself, learn and grow from game to game, go forward and higher."],
+                "more": "More"
+            }
+        ]
+    },
+    "contacts": {
+        "title": "Contacts",
+        "head": {
+            "title": [
+                "Address",
+                "Phone",
+                "E-MAIL"
+            ],
+            "text": [
+                "Primorsky Prospect 54, building 4A",
+                "St. Petersburg, 197374",
+                "+7 (812) 333-38-20",
+                "info@yoursportagent.ru"
+            ],
+            "hours": "Mon - Fri 9am till 8pm"
+        },
+        "info": [
+            "AVANGARD-NEVA LLC",
+            "INN 7814472301",
+            "KPP 781401001",
+            "OGRN 1107847206169"
+        ]
+    },
+    "price": {
+        "title": "Pricing",
+        "form": {
+            "title": [
+                "Fill the form,",
+                "to find out the exact prices"
+            ],
+            "successMessage": [
+                "Feedback sent",
+                "Our managers will contact you soon"
+            ],
+            "button": "Get feedback"
+        },
+        "nav": {
+            "item": [
+                "Club / Scout",
+                "Coach",
+                "Agent",
+                "Player",
+                "Junior team"
+            ]
+        },
+        "radio": {
+            "title": "Shooting video",
+            "item": [
+                "Your operator",
+                "YSA operator"
+            ],
+            "description": "For Russia only"
+        },
+        "payperiod": [
+            "Trial / 30 days",
+            "1 month",
+            "3 months",
+            "12 months",
+            "Premium / 1 month"
+        ],
+        "brief": {
+            "player": [
+                "Self-analysis of games for self-analysis and statistics",
+                "Index YSA",
+                "Access to the club database by region to find a new team",
+                "Access to the base of hockey agents",
+                "Create your own resume",
+                "Watching downloaded hockey matches",
+                "Ability to track your own progress and teammates' progress",
+                "Analysis of all games by YSA specialists"
+            ],
+            "coach": [
+                "Parsing and analysis of the games of your team and the opposing team",
+                "Open database with hockey players for search",
+                "Chat with club management and scouts",
+                "Simple compilation of reports on hockey players and matches",
+                "Comparison of hockey players",
+                "Tracking progress of your team"
+            ],
+            "agent": [
+                "Sending profiles of your clients directly to clubs",
+                "Open database with hockey players for search",
+                "Help your clients in the composition of their profile",
+                "Ability to track progress of hockey players"
+            ],
+            "kids": [
+                "Ability to download hockey matches",
+                "Parsing and analysis of all games by YSA specialists",
+                "Index YSA",
+                "Access to the club database by region to find a new team",
+                "Access to database of hockey agents",
+                "Create a personal profile",
+                "Viewing downloaded hockey matches",
+                "Ability for players to track their progress and teammates' progress"
+            ],
+            "club": [
+                "Open database with hockey players for search",
+                "Chat with management team of the club and farm clubs",
+                "Tracking your teammates",
+                "Viewing applications from agents",
+                "Rapid reporting on the hockey player",
+                "Parsing and analysis of all games by YSA specialists",
+                "Order for keeping players",
+                "Tracking the progress of your children's school",
+                "Parsing and analysis of the games of your club and opponents' clubs"
+            ]
+        },
+        "value": {
+            "coach": {
+                "before": [
+                    "2970 RUB",
+                    "11880 RUB"
+                ],
+                "after": [
+                    "0 RUB",
+                    "990 RUB",
+                    "2690 RUB",
+                    "9900 RUB"
+                ]
+            },
+            "agent": {
+                "before": [
+                    "8700 RUB",
+                    "34800 RUB"
+                ],
+                "after": [
+                    "0 RUB",
+                    "2900 RUB",
+                    "7900 RUB",
+                    "29000 RUB"
+                ]
+            },
+            "player": {
+                "before": [
+                    "2970 RUB",
+                    "11880 RUB"
+                ],
+                "after": [
+                    "0 RUB",
+                    "990 RUB",
+                    "2690 RUB",
+                    "9900 RUB"
+                ],
+                "premium": "3900 RUB"
+            },
+            "kids": {
+                "after": [
+                    "from 9900 RUB",
+                    "from 29700 RUB",
+                    "from 99000 RUB",
+                    "from 17900 RUB",
+                    "from 53700 RUB",
+                    "from 179000 RUB"
+                ]
+            }
+        },
+        "link": "Select",
+        "select": "Try"
+    },
+    "agent": {
+        "title": "Agents — YSA",
+        "description": "An extensive database of players with complete game stats right in front of you.  Track their progress and suggest working together.",
+        "header": "Agents",
+        "text": [
+            {
+                "header": "Rates a player’s every live action moment"
+            },
+            {
+                "header": "Instant score keeping you can share with colleagues"
+            },
+            {
+                "header": "Player search, view skills and stats"
+            },
+            {
+                "header": "Compare hockey players that caught your eye"
+            },
+            {
+                "header": "Track updates for every player"
+            }
+        ]
+    },
+    "club": {
+        "title": "Clubs — YSA",
+        "description": "Search for new players, track candidate progress, and easily converse and exchange info with scouts.",
+        "header": "Clubs",
+        "text": [
+            {
+                "header": "Evaluates key player moments"
+            },
+            {
+                "header": "Chat with coaches and scouts"
+            },
+            {
+                "header": "Track updates for every candidate"
+            },
+            {
+                "header": "Player search, view skills and stats"
+            },
+            {
+                "header": "Track top of players by age group"
+            },
+            {
+                "header": "Manage all teams in club system"
+            }
+        ]
+    },
+    "coach": {
+        "title": "Coaches — YSA",
+        "description": "Learn how your rivals play and prep your team for the big game by analyzing key tactical moments on video.",
+        "header": "Coaches",
+        "text": [
+            {
+                "header": "Аnalyze a rival team’s gameplay"
+            },
+            {
+                "header": "Study your team’s games"
+            },
+            {
+                "header": "Recruit new players for your team"
+            },
+            {
+                "header": "Compare players that caught your eye"
+            },
+            {
+                "header": "Track top of players by age group"
+            }
+        ]
+    },
+    "player": {
+        "title": "Players — YSA",
+        "description": "YSA will help in the growing of hockey career.",
+        "header": "Players",
+        "text": [
+            {
+                "header": "Create a personalized resume"
+            },
+            {
+                "header": "Index YSA"
+            },
+            {
+                "header": "Add and record a video of your game"
+            },
+            {
+                "header": "Send agents your portfolio"
+            },
+            {
+                "header": "Track your stats"
+            }
+        ]
+    },
+    "scout": {
+        "title": "Scouts — YSA",
+        "description": "Search and follow players, keep records, and discuss candidates with your colleagues.",
+        "header": "Scouts",
+        "text": [
+            {
+                "header": "Rates a player’s every live action moment"
+            },
+            {
+                "header": "Track updates for every player"
+            },
+            {
+                "header": "Player search, view skills and stats"
+            },
+            {
+                "header": "Instant score keeping you can share with colleagues"
+            },
+            {
+                "header": "Compare players that caught your attention"
+            }
+        ]
+    },
+    "register": {
+        "title": "Sign Up — YSA",
+        "description": "Sign Up in YSA",
+        "header": "Sign Up",
+        "subheader": "Fill in your contact details and we'll inform you as soon as the service airs",
+        "roles": [
+            "Club",
+            "Scout",
+            "Agent",
+            "Trainer",
+            "Player"
+        ],
+        "name": "Name",
+        "email": "Email",
+        "tel": "Phone number",
+        "promo": "Promo Code (optionally)",
+        "company": "Company",
+        "position": "Position",
+        "submit": "Sign Up",
+        "login": "Login",
+        "agreement": "By clicking ‘Sign up’ I confirm that I agree with <a href=\"/terms/\">Terms & Conditions</a> and using my Personal data.",
+        "success": {
+            "header": "Thank you!",
+            "text": ["YSA is scheduled to be released first quarter of 2018"],
+            "back": "Home"
+        },
+        "error": {
+            "header": "Error!",
+            "text": ["Error while processing your request. Check form data and try again."],
+            "retry": "Retry"
+        }
+    },
+    "footer": {
+        "dev": {
+            "url": "http://cuberto.com/",
+            "title": "Site by"
+        },
+        "social": {
+            "vk": "VK",
+            "facebook": "Facebook",
+            "instagram": "Instagram"
+        }
+    },
+    "terms": {
+        "title": "Terms & Conditions — YSA",
+        "description": "Terms & Conditions — YSA",
+        "header": "Terms & Conditions"
+    }
+}

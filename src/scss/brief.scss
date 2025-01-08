@@ -1,0 +1,38 @@
+.ysa-brief {
+    margin: 0 0 50px 0;
+
+    @media (min-width: $screen-sm-min) {
+        margin: 0 0 130px 0;
+    }
+
+    &-container {
+        padding: 0 68px;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 115px;
+        }
+    }
+
+    &-img {
+        padding: 20px 0 50px 0;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 0 70px 0;
+        }
+
+        img {
+            max-width: 100%;
+            box-shadow: 0 0 74px rgba($color-text, 0.2);
+        }
+    }
+
+    &-text {
+        max-width: 800px;
+
+        font-family: $font-family-secondary;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        line-height: 25px;
+    }
+}

@@ -1,0 +1,391 @@
+.ysa-navbar {
+    $root: &;
+
+    &-outer {
+        height: 100%;
+        padding-top: 60px;
+
+        @media (min-width: $screen-sm-min) {
+            padding-top: 81px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            padding-top: 101px;
+        }
+    }
+
+    &-logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+        z-index: 150;
+
+        color: $color-base;
+        background: $color-text;
+
+        line-height: 53px;
+        text-align: center;
+        vertical-align: middle;
+
+        @media (min-width: $screen-sm-min) {
+            height: 81px;
+            width: 136px;
+            line-height: 81px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            height: 101px;
+            width: 170px;
+            line-height: 101px;
+        }
+
+        &-brand {
+            display: none;
+            margin: 0 9px 0 0;
+            vertical-align: middle;
+
+            @media (min-width: $screen-sm-min) {
+                display: inline-block;
+            }
+
+            svg {
+                height: 39px;
+                width: 50px;
+            }
+        }
+
+        &-icon {
+            display: inline-block;
+            vertical-align: middle;
+
+            svg {
+                height: 32px;
+                width: 32px;
+
+                @media (min-width: $screen-sm-min) {
+                    height: 42px;
+                    width: 38px;
+                }
+
+                @media (min-width: $screen-xl-min) {
+                    height: 52px;
+                    width: 47px;
+                }
+            }
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-base;
+            text-decoration: none;
+        }
+    }
+
+    &-toggle {
+        display: inline-block;
+        position: absolute;
+        top: 22px;
+        right: 25px;
+        z-index: 2;
+        width: 20px;
+        height: 16px;
+
+        color: $color-text;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        @media (min-width: $screen-sm-min) {
+            display: none;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &.-inverse {
+            color: $color-base;
+
+            &:hover,
+            &:focus {
+                color: $color-base;
+            }
+        }
+    }
+
+    &-box {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        pointer-events: none;
+
+        color: $color-text;
+
+        transition: transform 0.5s;
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
+    }
+
+    &-grid {
+        display: table;
+        width: 100%;
+
+        &-left {
+            display: table-cell;
+            height: 60px;
+            vertical-align: middle;
+            text-align: right;
+
+            @media (min-width: $screen-sm-min) {
+                height: 81px;
+            }
+
+            @media (min-width: $screen-xl-min) {
+                height: 101px;
+            }
+        }
+
+        &-right {
+            display: table-cell;
+            vertical-align: middle;
+            white-space: nowrap;
+            text-align: right;
+            width: 1px;
+
+            @media (min-width: $screen-sm-min) {
+                width: 50%;
+            }
+        }
+    }
+
+    &-reg {
+        position: relative;
+        display: inline-block;
+        margin: 0 9px;
+
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.35px;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        @media (min-width: $screen-sm-min) {
+            margin: 0;
+
+            font-size: 14px;
+            letter-spacing: 0.37px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            //margin-right:60px;
+            margin: 0 19px;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            width: 100%;
+            height: 2px;
+
+            transform: scaleX(1);
+            transform-origin: left center;
+            transition: transform 0.2s ease-in-out;
+
+            background: currentColor;
+
+            @media (min-width: $screen-sm-min) {
+                bottom: -5px;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            color: inherit;
+            text-decoration: none;
+
+            &:after {
+                transform: scaleX(0);
+                transform-origin: right center;
+            }
+        }
+    }
+
+    &-nav {
+        display: inline-block;
+        vertical-align: middle;
+        pointer-events: auto;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 30px 0 0;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            padding: 0 60px 0 0;
+        }
+
+        &-item {
+            $this: &;
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0 9px;
+
+            color: inherit;
+
+            @media (min-width: $screen-sm-min) {
+                padding: 0 19px;
+            }
+
+            &:last-child {
+                padding-right: 0;
+                padding-left: 0;
+
+                @media (min-width: $screen-sm-min) {
+                    padding-left: 15px;
+                }
+            }
+
+            &-text {
+                position: relative;
+                display: none;
+                vertical-align: middle;
+
+                font-size: 13px;
+                font-weight: bold;
+                letter-spacing: 0.35px;
+                text-transform: uppercase;
+
+                @media (min-width: $screen-sm-min) {
+                    display: inline-block;
+
+                    font-size: 14px;
+                    font-weight: bold;
+                    letter-spacing: 0.37px;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    bottom: -3px;
+                    width: 100%;
+                    height: 2px;
+
+                    transform: scaleX(0);
+                    transform-origin: right center;
+                    transition: transform 0.2s ease-in-out;
+
+                    background: currentColor;
+
+                    @media (min-width: $screen-sm-min) {
+                        bottom: -5px;
+                    }
+                }
+            }
+
+            &-icon {
+                position: relative;
+                top: -1px;
+                font-size: 16px;
+
+                transition: all 0.2s;
+            }
+
+            &-text + &-icon {
+                @media (min-width: $screen-sm-min) {
+                    display: none;
+                }
+            }
+
+            &:hover,
+            &:focus {
+                text-decoration: none;
+
+                #{$this} {
+                    &-icon {
+                        opacity: 0.6;
+                    }
+
+                    &-text {
+                        &:after {
+                            transform: scaleX(1);
+                            transform-origin: left center;
+                        }
+                    }
+                }
+            }
+
+            &.-invisible {
+                display: none;
+            }
+
+            &.-price {
+                @media (min-width: $screen-sm-min) {
+                    padding: 0 0 0 19px;
+                }
+            }
+        }
+    }
+
+    &.-hidden {
+        transform: translateY(-110px);
+    }
+
+    &.-fixed {
+        #{$root} {
+            &-box {
+                background: $color-base;
+            }
+
+            &-grid {
+                &-right {
+                    width: 1px;
+                }
+            }
+        }
+    }
+
+    &.-other {
+        #{$root} {
+            &-box {
+                color: $color-base;
+            }
+
+            &-grid {
+                &-right {
+                    width: 1px;
+                }
+            }
+        }
+    }
+
+    &.-inverse {
+        #{$root} {
+            &-box {
+                color: $color-base;
+            }
+
+            &-reg {
+                margin-right: 60px;
+            }
+        }
+    }
+}

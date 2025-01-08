@@ -1,0 +1,46 @@
+extends /_includes/layout
+
+block title
+    title Попасть в рейтинг топ-игроков — YSA
+    meta(name='description', content="Попасть в рейтинг топ-игроков в платформе YSA")
+
+block content
+    +navbar.-fixed
+
+    .ysa-wrap#wrap-main(data-controller="articleController")
+        .ysa-navbar-outer
+
+            .ysa-tophead
+                .ysa-tophead-wrap
+                    .ysa-tophead-container
+                        .ysa-tophead-grid
+                            .ysa-tophead-grid-left
+                                .ysa-tophead-nav
+                                    .ysa-tophead-nav-back.-top(data-aos="fade-left")
+                                        a.ysa-btn.ysa-btn_back(href="/player/")
+                                            span.ysa-btn_back-ring
+                                            span.ysa-btn_back-shape
+                                                svg(viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;")
+                                                    path(d='M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z')
+                                            span.ysa-btn_back-arr
+                                                svg(viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;")
+                                                    path(d='M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z')
+                                                    path(d='M17,5.3 v1.4 h-13.9 v-1.4 h13.9z')
+                                    .ysa-tophead-nav-title.-sm(data-aos="fade-left", data-aos-delay="200")
+                                        h1 Попасть в рейтинг топ-игроков
+                            .ysa-tophead-grid-right
+                                .ysa-tophead-num &nbsp;
+
+            .ysa-container
+
+                .ysa-brief
+                    .ysa-brief-container
+                        .ysa-brief-img(data-aos="fade-down")
+                            a(href="/assets/img/player/extra/2@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/extra/2.png", srcset="/assets/img/player/extra/2@2x.png 2x", alt)
+                        .ysa-brief-text(data-aos="fade-up")
+                            p Рейтинг игроков формируется в каждой возрастной группе. Вы будете видеть, какую позицию занимаете – в тысяче лучших игроков, в сотне или в первой десятке. По итогам года в каждой группе определяется топ-42  – две команды, которые приедут на реальный просмотр в Санкт-Петербург и смогут показать себя в настоящей игре.
+                            p Отслеживайте свой рейтинг. Рейтинги формируются по статистике, по оценкам и отдельно по каждому игровому действию. Рейтинговая система нужна для мотивации игроков. Это далеко не единственный критерий выбора для клубов.
+                            p Улучшайте позиции. Сделать это можно только улучшая свою игру. Рейтинг учитывает объективные факторы – вашу статистику и те оценки, которые отражают мнение других людей о вашей работе. Рейтинг и положение в своей команде – это не одно и то же, здесь не работают субъективные мотивы.
+                            p Верьте в себя. Если сегодня ваши рейтинги не устраивают вас, не теряйте азарта! Не бросайте работу с порталом, заполнение своего профайла или создание видеоархива. Через год или два все может измениться. Это долгосрочный проект, цель которого – работать на развитие вашей карьеры.
+
+                +footer

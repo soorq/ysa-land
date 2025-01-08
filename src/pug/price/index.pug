@@ -1,0 +1,845 @@
+extends /_includes/layout
+
+block title
+    title #{__.price.title}
+    meta(name='description', content="#{__.coach.description}")
+
+block content
+    +navbar({langClass: "-inverse"}).-other
+
+    .ysa-wrap.-inverse.-primary#wrap-main(data-controller="priceController")
+        .ysa-price
+            .ysa-navbar-outer
+                .ysa-tophead.-inverse
+                    .ysa-tophead-wrap.-lg
+                        .ysa-tophead-container
+                            .ysa-tophead-nav
+                                .ysa-tophead-nav-back(data-aos="fade-left")
+                                    a.ysa-btn.ysa-btn_back(href="/")
+                                        span.ysa-btn_back-ring
+                                        span.ysa-btn_back-shape
+                                            svg(viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;")
+                                                path(d='M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z')
+                                        span.ysa-btn_back-arr
+                                            svg(viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;")
+                                                path(d='M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z')
+                                                path(d='M17,5.3 v1.4 h-13.9 v-1.4 h13.9z')
+                                .ysa-tophead-nav-title(data-aos="fade-left", data-aos-delay="200")
+                                    h1 #{__.price.title}
+                .ysa-price-content
+                    .ysa-price-topbar
+                        .ysa-price-topbar-container
+                            .ysa-price-topbar-nav(data-aos="fade-up", data-aos-delay="300")
+                                a.ysa-price-topbar-nav-item.-active(data-tab-toggle="club") #{__.price.nav.item[0]}
+                                a.ysa-price-topbar-nav-item(data-tab-toggle="coach") #{__.price.nav.item[1]}
+                                a.ysa-price-topbar-nav-item(data-tab-toggle="agent") #{__.price.nav.item[2]}
+                                //a.ysa-price-topbar-nav-item(data-tab-toggle="player") #{__.price.nav.item[3]}
+                                //a.ysa-price-topbar-nav-item(data-tab-toggle="kids") #{__.price.nav.item[4]}
+                        .ysa-price-dropdown
+                            .ysa-dropdown.ysa-dropdown_nav
+                                a.ysa-dropdown_nav-toggle(data-dropdown-toggle)
+                                    span.ysa-dropdown_nav-toggle-text #{__.register.roles[0]}
+                                    span.ysa-dropdown_nav-toggle-arr
+                                        +svgsprite('caret-down-lg')
+                                .ysa-dropdown_nav-menu
+                                    a.ysa-dropdown_nav-menu-item.-active(data-tab-toggle="club")
+                                            span #{__.price.nav.item[0]}
+                                    a.ysa-dropdown_nav-menu-item(data-tab-toggle="coach")
+                                            span #{__.price.nav.item[1]}
+                                    a.ysa-dropdown_nav-menu-item(data-tab-toggle="agent")
+                                            span #{__.price.nav.item[2]}
+                                    //a.ysa-dropdown_nav-menu-item(data-tab-toggle="player")
+                                    //        span #{__.price.nav.item[3]}
+                                    //a.ysa-dropdown_nav-menu-item(data-tab-toggle="kids")
+                                    //        span #{__.price.nav.item[4]}
+                    .ysa-price-body(data-aos="fade-up", data-aos-delay="400")
+                        .ysa-price-body-container
+                            .ysa-price-body-item(data-tab-name="club")
+                                .ysa-price-tariff
+                                    .ysa-price-tariff-wrap
+                                        .ysa-price-tariff-container
+                                            .ysa-price-tariff-grid.-half
+                                                .ysa-price-tariff-grid-col
+                                                    .ysa-price-tariff-item.-half
+                                                        .ysa-price-tariff-item-body
+                                                            .ysa-price-tariff-item-wrap.-sm
+                                                                .ysa-price-tariff-brief.-xs
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[0]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[1]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[2]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[3]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[4]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[5]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[6]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[7]}
+                                                                    .ysa-price-tariff-brief-item
+                                                                        span.ysa-price-tariff-brief-item-icon
+                                                                            +svgsprite('triangle-right')
+                                                                        span #{__.price.brief.club[8]}
+                                                .ysa-price-tariff-grid-col.-right
+                                                    .ysa-price-tariff-item
+                                                        .ysa-price-tariff-form
+                                                            .ysa-price-tariff-form-message
+                                                                .ysa-price-tariff-form-message-title #{__.price.form.successMessage[0]}
+                                                                p #{__.price.form.successMessage[1]}
+                                                            .ysa-price-tariff-form-box.-visible
+                                                                .ysa-price-tariff-form-title #{__.price.form.title[0]}
+                                                                    br
+                                                                    | #{__.price.form.title[1]}
+                                                                form.ysa-form(method="post", action="/report.php")
+                                                                    input(type='hidden' name='formType' value='clubScout')
+                                                                    .ysa-form-group
+                                                                        input.ysa-form-input.-inverse(type="text", name="name", placeholder=__.register.name, required)
+                                                                    .ysa-form-group
+                                                                        input.ysa-form-input.-inverse(type="email", name="email", placeholder=__.register.email, required)
+                                                                    .ysa-form-group
+                                                                        input.ysa-form-input.-inverse(type="tel", name="tel", placeholder=__.register.tel, pattern="[0-9\\-\\s\\+\\(\\)]+", oninvalid = "setCustomValidity('+7(999)000-11-22')", required)
+                                                                    .ysa-form-grid
+                                                                        .ysa-form-grid-col
+                                                                            .ysa-form-group
+                                                                                input.ysa-form-input.-inverse(type="text", name="comp", placeholder=__.register.company, required)
+                                                                        .ysa-form-grid-col
+                                                                            .ysa-form-group
+                                                                                input.ysa-form-input.-inverse(type="text", name="pos", placeholder=__.register.position, required)
+                                                                    .ysa-form-submit
+                                                                        button.ysa-btn.ysa-btn_flat(type="submit")
+                                                                            span #{__.price.form.button}
+
+                            .ysa-price-body-item(data-tab-name="coach")
+                                .ysa-price-tariff
+                                    .ysa-price-tariff-wrap
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[5]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.coach.after[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=coach"))
+                                                                    span #{__.price.select}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[5]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.coach.after[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=coach&payperiod=1m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[5]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.coach.before[0]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.coach.after[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=coach&payperiod=3m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.coach[5]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.coach.before[1]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.coach.after[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=coach&payperiod=1y"))
+                                                                    span #{__.price.link}
+                            .ysa-price-body-item(data-tab-name="agent")
+                                .ysa-price-tariff
+                                    .ysa-price-tariff-wrap
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.agent.after[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=agent"))
+                                                                    span #{__.price.select}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.agent.after[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=agent&payperiod=1m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.agent.before[0]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.agent.after[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=agent&payperiod=3m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title #{__.price.payperiod[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.agent[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.agent.before[1]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.agent.after[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=agent&payperiod=1y"))
+                                                                    span #{__.price.link}
+                            .ysa-price-body-item(data-tab-name="player")
+                                .ysa-price-tariff
+                                    .ysa-price-tariff-wrap.-xs
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title.-xs #{__.price.payperiod[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[5]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[6]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.player.after[0]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=player"))
+                                                                    span #{__.price.select}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title.-xs #{__.price.payperiod[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[5]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[6]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.player.after[1]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=player&payperiod=1m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title.-xs #{__.price.payperiod[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[5]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[6]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.player.before[0]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.player.after[2]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=player&payperiod=3m"))
+                                                                    span #{__.price.link}
+                                        .ysa-price-tariff-item
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title.-xs #{__.price.payperiod[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[0]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[5]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[6]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-grid
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-before #{__.price.value.player.before[1]}
+                                                                    .ysa-price-tariff-count-grid-col
+                                                                        .ysa-price-tariff-count-after #{__.price.value.player.after[3]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=player&payperiod=1y"))
+                                                                    span #{__.price.link}
+                                    .ysa-price-tariff-wrap.-sm
+                                        .ysa-price-tariff-item.-full
+                                            .ysa-price-tariff-item-body
+                                                .ysa-price-tariff-item-wrap
+                                                    .ysa-price-tariff-item-container
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-title.-xs #{__.price.payperiod[4]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-brief.-lg
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span
+                                                                        strong #{__.price.brief.player[7]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[1]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[2]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[3]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[4]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[5]}
+                                                                .ysa-price-tariff-brief-item
+                                                                    span.ysa-price-tariff-brief-item-icon
+                                                                        +svgsprite('triangle-right')
+                                                                    span #{__.price.brief.player[6]}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-count
+                                                                .ysa-price-tariff-count-after #{__.price.value.player.premium}
+                                                        .ysa-price-tariff-item-col
+                                                            .ysa-price-tariff-action.-lg
+                                                                a.ysa-btn.ysa-btn_flat.-lg(href=(systemLink + "/login/registration?type=player&payperiod=1mp"))
+                                                                    span #{__.price.link}
+                            .ysa-price-body-item(data-tab-name="kids")
+                                .ysa-price-tariff
+                                    .ysa-price-tariff-wrap
+                                        .ysa-price-tariff-grid
+                                            .ysa-price-tariff-grid-col.-col
+                                                .ysa-price-radio
+                                                    .ysa-price-radio-wrap
+                                                        .ysa-price-radio-container
+                                                            .ysa-price-radio-title #{__.price.radio.title}
+                                                            .ysa-price-radio-items
+                                                                .ysa-radio.ysa-radio_box
+                                                                    label(data-radio-toggle="operator-his")
+                                                                        .ysa-radio_box-item
+                                                                            input(type="radio", name="video", checked)
+                                                                            span.ysa-radio_box-box
+                                                                                span.ysa-radio_box-box-dot
+                                                                            span.ysa-radio_box-text #{__.price.radio.item[0]}
+                                                                    label(data-radio-toggle="operator-ysa")
+                                                                        .ysa-radio_box-item
+                                                                            input(type="radio", name="video")
+                                                                            span.ysa-radio_box-box
+                                                                                span.ysa-radio_box-box-dot
+                                                                            span.ysa-radio_box-text.-last #{__.price.radio.item[1]}
+                                                                                span #{__.price.radio.description}
+                                                .ysa-price-tariff-items
+                                                    .ysa-price-tariff-item.-lg
+                                                        .ysa-price-tariff-item-body
+                                                            .ysa-price-tariff-item-wrap
+                                                                .ysa-price-tariff-item-container
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-title.-md #{__.price.payperiod[1]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-brief.-sm
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[0]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[1]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[2]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[3]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[4]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[5]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[6]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[7]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-count.-his(data-radio-name="operator-his")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[0]}
+                                                                        .ysa-price-tariff-count.-ysa(data-radio-name="operator-ysa")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[3]}
+                                                    .ysa-price-tariff-item.-lg
+                                                        .ysa-price-tariff-item-body
+                                                            .ysa-price-tariff-item-wrap
+                                                                .ysa-price-tariff-item-container
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-title.-md #{__.price.payperiod[2]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-brief.-sm
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[0]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[1]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[2]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[3]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[4]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[5]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[6]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[7]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-count.-his(data-radio-name="operator-his")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[1]}
+                                                                        .ysa-price-tariff-count.-ysa(data-radio-name="operator-ysa")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[4]}
+                                                    .ysa-price-tariff-item.-lg
+                                                        .ysa-price-tariff-item-body
+                                                            .ysa-price-tariff-item-wrap
+                                                                .ysa-price-tariff-item-container
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-title.-md #{__.price.payperiod[3]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-brief.-sm
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[0]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[1]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[2]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[3]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[4]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[5]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[6]}
+                                                                            .ysa-price-tariff-brief-item
+                                                                                span.ysa-price-tariff-brief-item-icon
+                                                                                    +svgsprite('triangle-right')
+                                                                                span #{__.price.brief.kids[7]}
+                                                                    .ysa-price-tariff-item-col
+                                                                        .ysa-price-tariff-count.-his(data-radio-name="operator-his")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[2]}
+                                                                        .ysa-price-tariff-count.-ysa(data-radio-name="operator-ysa")
+                                                                            .ysa-price-tariff-count-after #{__.price.value.kids.after[5]}
+                                            .ysa-price-tariff-grid-col.-lg
+                                                .ysa-price-tariff-item
+                                                    .ysa-price-tariff-form.-sm
+                                                        .ysa-price-tariff-form-message
+                                                            .ysa-price-tariff-form-message-title #{__.price.form.successMessage[0]}
+                                                            p #{__.price.form.successMessage[1]}
+                                                        .ysa-price-tariff-form-box.-visible
+                                                            .ysa-price-tariff-form-title #{__.price.form.title[0]}
+                                                                br
+                                                                =" "
+                                                                | #{__.price.form.title[1]}
+                                                            form.ysa-form(method="post", action="/report.php")
+                                                                input(type='hidden' name='formType' value='junior')
+                                                                .ysa-form-group
+                                                                    input.ysa-form-input.-inverse(type="text", name="name", placeholder=__.register.name, required)
+                                                                .ysa-form-group
+                                                                    input.ysa-form-input.-inverse(type="email", name="email", placeholder=__.register.email, required)
+                                                                .ysa-form-group
+                                                                    input.ysa-form-input.-inverse(type="tel", name="tel", placeholder=__.register.tel, pattern="[0-9\\-\\s\\+\\(\\)]+", oninvalid = "setCustomValidity('+7(999)000-11-22')", required)
+                                                                .ysa-form-submit
+                                                                    button.ysa-btn.ysa-btn_flat(type="submit")
+                                                                        span #{__.price.form.button}
+        .ysa-container
+            +footer.-inverse

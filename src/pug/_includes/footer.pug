@@ -1,0 +1,23 @@
+mixin footer(options)
+    .ysa-footer&attributes(attributes)
+        .ysa-footer-container
+            .ysa-footer-grid
+                .ysa-footer-grid-left
+                    a.ysa-footer-dev(href=__.footer.dev.url, target="_blank")
+                        span.ysa-footer-dev-text #{__.footer.dev.title}
+                        span.ysa-footer-dev-logo
+                            i.ysa-sprite.-cuberto-logo
+                .ysa-footer-grid-right
+                    .ysa-footer-social
+                        a.ysa-footer-social-item(href="https://vk.com/yoursportagent", target="_blank")
+                            span.ysa-footer-social-item-icon
+                                +svgsprite('vk')(style="font-size:21px")
+                            span.ysa-footer-social-item-text #{__.footer.social.vk}
+                        a.ysa-footer-social-item(href="https://www.facebook.com/yoursportagent.ru", target="_blank")
+                            span.ysa-footer-social-item-icon
+                                +svgsprite('facebook')(style="font-size:16px")
+                            span.ysa-footer-social-item-text #{__.footer.social.facebook}
+                        a.ysa-footer-social-item(href="https://www.instagram.com/yoursportagent/", target="_blank")
+                            span.ysa-footer-social-item-icon
+                                +svgsprite('instagram')(style="font-size:17px")
+                            span.ysa-footer-social-item-text #{__.footer.social.instagram}

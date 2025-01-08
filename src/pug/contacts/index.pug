@@ -1,0 +1,65 @@
+extends /_includes/layout
+
+block title
+    title #{__.contacts.title}
+    meta(name='description', content="#{__.contacts.title}")
+
+block content
+    +navbar.-fixed
+
+    .ysa-wrap#wrap-main(data-controller="contactsController")
+        .ysa-navbar-outer
+
+            .ysa-tophead
+                .ysa-tophead-wrap.-lg
+                    .ysa-tophead-container
+                        .ysa-tophead-nav
+                            .ysa-tophead-nav-back(data-aos="fade-left")
+                                a.ysa-btn.ysa-btn_back(href="/")
+                                    span.ysa-btn_back-ring
+                                    span.ysa-btn_back-shape
+                                        svg(viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;")
+                                            path(d='M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z')
+                                    span.ysa-btn_back-arr
+                                        svg(viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;")
+                                            path(d='M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z')
+                                            path(d='M17,5.3 v1.4 h-13.9 v-1.4 h13.9z')
+                            .ysa-tophead-nav-title(data-aos="fade-left", data-aos-delay="200")
+                                h1 #{__.contacts.title}
+
+            .ysa-contacts
+                .ysa-contacts-container
+                    .ysa-contacts-head(data-aos="fade-up", data-aos-delay="300")
+                        .ysa-contacts-head-item
+                            .ysa-contacts-head-title #{__.contacts.head.title[0]}
+                            .ysa-contacts-head-text #{__.contacts.head.text[0]}
+                                br
+                                | #{__.contacts.head.text[1]}
+                        .ysa-contacts-head-item
+                            .ysa-contacts-head-title #{__.contacts.head.title[1]}
+                            .ysa-contacts-head-text
+                                span.call_phone_1 #{__.contacts.head.text[2]}
+                                br
+                                | #{__.contacts.head.hours}
+                        .ysa-contacts-head-item
+                            .ysa-contacts-head-title #{__.contacts.head.title[2]}
+                            .ysa-contacts-head-text #{__.contacts.head.text[3]}
+                .ysa-contacts-map(data-aos="fade-up", data-aos-delay="300")
+                    #map
+                .ysa-contacts-info
+                    .ysa-contacts-container
+                        .ysa-contacts-info-item
+                            .ysa-contacts-info-text #{__.contacts.info[0]}
+                        .ysa-contacts-info-item
+                            .ysa-contacts-info-text #{__.contacts.head.text[0]}
+                                br
+                                | #{__.contacts.head.text[1]}
+                        .ysa-contacts-info-item
+                            .ysa-contacts-info-text #{__.contacts.info[1]}
+                        .ysa-contacts-info-item
+                            .ysa-contacts-info-text #{__.contacts.info[2]}
+                        .ysa-contacts-info-item
+                            .ysa-contacts-info-text #{__.contacts.info[3]}
+
+            .ysa-container
+                +footer

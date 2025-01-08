@@ -1,0 +1,218 @@
+extends /_includes/layout
+
+block title
+    title #{__.terms.title}
+    meta(name='description', content="#{__.terms.description}")
+
+block content
+    +navbar.-fixed
+
+    .ysa-wrap#wrap-main(data-controller="articleController", data-num="1")
+        .ysa-navbar-outer
+
+            .ysa-tophead
+                .ysa-tophead-wrap
+                    .ysa-tophead-container
+                        .ysa-tophead-grid
+                            .ysa-tophead-grid-left
+                                .ysa-tophead-nav
+                                    .ysa-tophead-nav-back(data-aos="fade-left")
+                                        a.ysa-btn.ysa-btn_back(href="/")
+                                            span.ysa-btn_back-ring
+                                            span.ysa-btn_back-shape
+                                                svg(viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;")
+                                                    path(d='M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z')
+                                            span.ysa-btn_back-arr
+                                                svg(viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;")
+                                                    path(d='M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z')
+                                                    path(d='M17,5.3 v1.4 h-13.9 v-1.4 h13.9z')
+                                    .ysa-tophead-nav-title(data-aos="fade-left", data-aos-delay="200")
+                                        h1 #{__.terms.header}
+                            .ysa-tophead-grid-right
+                                .ysa-tophead-num &nbsp;
+
+            .ysa-container
+
+                if(__.lang === "ru")
+                    .ysa-terms
+                        .ysa-terms-part
+                            h2 Пользовательское соглашение об обработке персональных данных
+                            p &nbsp;
+                            p Присоединяясь к настоящему Соглашению и оставляя свои данные на Сайте yoursportagent.ru , (далее – Сайт), путем заполнения полей онлайн-заявки (регистрации) Пользователь:
+                            ul
+                                li подтверждает, что указанные им персональные данные принадлежат лично ему; 
+                                li признает и подтверждает, что он внимательно и в полном объеме ознакомился с настоящим Соглашением и содержащимися в нем условиями обработки его персональных данных, указываемых им в полях он-лайн заявки (регистрации) на сайте;
+                                li признает и подтверждает, что все положения настоящего Соглашения и условия обработки его персональных данных ему понятны; 
+                                li дает согласие на обработку Сайтом предоставляемых персональных данных в целях регистрации Пользователя на Сайте;
+                                li выражает согласие с условиями обработки персональных данных без каких-либо оговорок и ограничений.
+                            p &nbsp;
+                            p Пользователь дает свое согласие на обработку его персональных данных, а именно совершение действий, предусмотренных п. 3 ч. 1 ст. 3 Федерального закона от 27.07.2006 N 152-ФЗ "О персональных данных", и подтверждает, что, давая такое согласие, он действует свободно, своей волей и в своем интересе.
+                            p Согласие Пользователя на обработку персональных данных является конкретным, информированным и сознательным.
+                            p Настоящее согласие Пользователя применяется в отношении обработки следующих персональных данных:
+                            ul
+                                li фамилия, имя, отчество;
+                                li номера телефонов;
+                                li адреса электронной почты (E-mail).
+                            p &nbsp;
+                            p Пользователь, предоставляет сервису yoursportagent.ru право осуществлять следующие действия (операции) с персональными данными:
+                            ul
+                                li сбор и накопление;
+                                li хранение в течение установленных нормативными документами сроков хранения отчетности, но не менее трех лет, с момента даты прекращения пользования услуг Сайта Пользователем;
+                                li уточнение (обновление, изменение);
+                                li использование в целях регистрации Пользователя на Сайте;
+                                li уничтожение;
+                                li передача по требованию суда, в т.ч. третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.
+                            p &nbsp;
+                            p Указанное согласие действует бессрочно с момента предоставления данных и может быть отозвано Вами путем подачи заявления администрации Сайта с указанием данных, определенных ст. 14 Закона «О персональных данных».
+                            p Отзыв согласия на обработку персональных данных может быть осуществлен путем направления Пользователем соответствующего распоряжения в простой письменной форме на адрес электронной почты (E-mail) info@yoursportagent.ru.
+                            p Сайт не несет ответственности за использование (как правомерное, так и неправомерное) третьими лицами информации, размещенной Пользователем на Сайте, включая её воспроизведение и распространение, осуществленные всеми возможными способами.
+                            p Сайт имеет право вносить изменения в настоящее Соглашение. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Соглашения вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией Соглашения.
+                            p &nbsp;
+                            p Действующая редакция всегда находится на странице по адресу: http://yoursportagent.ru/terms/
+                            p К настоящему Соглашению и отношениям между пользователем и Сайтом, возникающим в связи с применением Соглашения подлежит применению материальное и процессуальное право Российской Федерации.
+                            p Технические средства сайта автоматически распознают сетевые (IP) адреса пользователей. Указанная информация; адреса электронной почты лиц, пользующихся интерактивными сервисами сайта и (или) отправляющих электронные сообщения в адреса, указанные на сайте; автоматически накапливаемые сведения о том, к каким интернет-страницам сайта обращались пользователи; иные сведения (в том числе персонального характера), сообщаемые пользователями, – хранятся с использованием технических средств сайта.
+                            p Такие сведения о пользователях сайта, накапливаемые и хранимые в технических средствах сайта, используются исключительно для целей: совершенствования способов и методов представления информации на сайте, улучшения обслуживания его пользователей (посетителей), выявления наиболее посещаемых интернет-страниц (интерактивных сервисов) сайта, а также ведения статистики посещений сайта.
+                        .ysa-terms-part
+                            h2 Пользовательское соглашение об использовании персональных данных
+                            p &nbsp;
+                            p В рамках настоящего Пользовательского соглашения описаны правила (далее – Правила), являющиеся официальным документом ООО «АВАНГАРД-НЕВА» (далее – Администрация Сайта), которые определяют порядок обработки и защиты информации о физических лицах, пользующихся услугами интернет-сайта yoursportagent.ru и его поддоменов (далее – Сайт).
+                            p В соответствие с п. 1 Статьи 1 главы 1 Федерального закона Российской Федерации от 27 июля 2006 г. № 152-ФЗ «О персональных данных» в рамках настоящего Соглашения под персональными данными понимается следующее понятие: «Персональные данные – любая информация, относящаяся к определенному или определяемому на основании такой информации физическому лицу (субъекту персональных данных), в том числе его фамилия, имя, отчество, год, месяц, дата и место рождения, адрес, семейное, социальное, имущественное положение, образование, профессия, доходы, другая информация».
+                            p Целью настоящих Правил является обеспечение надлежащей защиты информации физических лиц, субъектов персональных данных (Далее – Пользователь), в том числе их персональных данных, от несанкционированного доступа и разглашения.
+                            p Отношения, связанные со сбором, хранением, распространением и защитой информации о Пользователях Сайта, регулируются настоящими Правилами, иными официальными документами Администрации Сайта и действующим законодательством Российской Федерации.
+                            p Настоящие Правила являются публичным документом, доступным на Сайте любому Пользователю сети Интернет. Администрация Сайта вправе вносить изменения в настоящие Правила. При внесении изменений в Правила Администрация Сайта уведомляет об этом пользователей путем размещения новой редакции Правил на Сайте.
+                            p Регистрируясь и используя Сайт, Пользователь выражает свое согласие с условиями настоящих Правил.
+                            p При регистрации на Сайте Пользователь обязан предоставить Администрации Сайта необходимую достоверную и актуальную информацию, а также необходимые для регистрации персональные данные Пользователя в соответствие с формой, заполняемой при регистрации на Сайте.
+                            p Пользователю при использовании Сайта запрещается:
+                            ul
+                                li создавать несколько учетных записей;
+                                li передавать в пользование свою учетную запись и/или логин и пароль своей учетной записи третьим лицам;
+                                li регистрировать учетную запись от имени другого лица;
+                                li искажать сведения о себе, своем возрасте, а также своих отношениях с другими лицами или организациями;
+                                li использовать программное обеспечение и осуществлять действия, направленные на нарушение нормального функционирования Сайта, его сервисов или персональных страниц Пользователей.
+                            p &nbsp;
+                            p Пользователь несет личную ответственность за любую информацию, которую размещает на Сайте, сообщает другим Пользователям, а также за любые взаимодействия с другими Пользователями.
+                            p &nbsp;
+                            p В случае несогласия Пользователя с настоящими Правилами или их обновлениями, Пользователь обязан отказаться от его использования, проинформировав об этом Администрацию Сайта в установленном порядке.
+                            p Принимая настоящее Соглашение путем регистрации на Сайте, Пользователь подтверждает свое согласие на обработку Администрацией его персональных данных, предоставленных при регистрации. Обработка персональных данных Пользователя осуществляется в соответствии с законодательством Российской Федерации. В соответствии с п.3) Статьи 1 Главы 1 Федерального закона Российской Федерации от 27 июля 2006 г. № 152-ФЗ «О персональных данных»: «Обработка персональных данных — действия (операции) с персональными данными, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, распространение (в том числе передачу), обезличивание, блокирование, уничтожение персональных данных.
+                            p Согласно закона Обработка персональных данных — любое действие (операция) или совокупность действий (операций), совершаемых с использованием средств автоматизации или без использования таких средств с персональными данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение персональных данных;  Согласие предоставляется на 10 (десять) лет.
+                            p &nbsp;
+                            p Принимая настоящее Соглашение, Пользователь подтверждает свое согласие на получение смс рассылок и e-mail уведомлений по электронной почте.
+                            p &nbsp;
+                            p Права и обязанности Администрации Сайта:
+                            ul
+                                li Администрация Сайта принимает все необходимые меры для защиты от неправомерного доступа, изменения, раскрытия или уничтожения персональных данных Пользователя;
+                                li Администрация Сайта предоставляет доступ к персональным данным Пользователя только тем третьим лицам, которым эта информация необходима для обеспечения функционирования Сайта, а также разрешает использовать предоставленные Пользователем персональные данные в целях обеспечения соблюдения требований действующего законодательства Российской Федерации (в том числе в целях предупреждения и/или пресечения незаконных и/или противоправных действий Пользователей);
+                            p Согласие на рассылку: Подписавшись на этом сайте yoursportagent.ru или его поддоменах, Пользователь выражает свое согласие на получение рассылки материалов рекламного и/или информационного характера посредством SMS-сервисов, электронной почты и т.д. от ООО «АВАНГАРД-НЕВА» , ИНН 7814472301, ОГРН 1107847206169.
+                            p &nbsp;
+                            p После того, как вы введете ваши данные, вы будете время от времени получать от нас по электронной почте новостную рассылку и извещения. Если вы пожелаете перестать получать от нас информацию, вы сможете отказаться от рассылки в любое время, пройдя по ссылке, приведенной в конце каждого письма.
+                            p
+                            p Пользуясь  и/или вводя свои данные на сайте yoursportagent.ru или его поддоменах,  или других сайтах ООО «АВАНГАРД-НЕВА», вы даете своё согласие на получение рассылки материалов рекламного и/или информационного характера посредством SMS-сервисов, электронной почты и т.д. от ООО «АВАНГАРД-НЕВА» , ИНН 7814472301, ОГРН 1107847206169. и подтверждаете, что ознакомились с офертой,  политикой конфиденциальности, соглашением на обработку данных, отказом от ответственности, политикой возвратов и соглашением на рассылку рекламных материалов.
+                        .ysa-terms-part
+                            h2 Согласие на получение рассылки и рекламных материалов
+                            p &nbsp;
+                            p Я, регистрируясь и/или вводя свои данные на сайте yoursportagent.ru или его поддоменах,  или других сайтах ООО «АВАНГАРД-НЕВА», с целью осуществления регистрации, даю своё согласие на получение рассылки материалов рекламного и/или информационного характера посредством SMS-сервисов, электронной почты и т.д. от ООО «АВАНГАРД-НЕВА» , ИНН 7814472301, ОГРН 1107847206169.
+                            p Давая такое согласие, я подтверждаю, что действую по своей воле и в своем интересе, а  также обязуюсь предоставить достоверные данные, необходимые для регистрации и тп.
+                            p &nbsp;
+                            p Я подтверждаю, что владею информацией о том, что в любой момент в течение всего срока действия настоящего согласия, я вправе отозвать согласие данного соглашения, и отписаться от получения e-mail рассылок путем перехода по соответствующей ссылке, существующей в любом письме.
+                            p &nbsp;
+                            p Также я информирован (-а), что при возникновении  вопросов относительно отказа, в том числе sms рассылок, я могу обратиться за помощью, отправив письмо на следующий адрес электронной почты: info@yoursportagent.ru.
+                            p &nbsp;
+                            p Пользуясь  и/или вводя свои данные на сайте yoursportagent.ru  или его поддоменах,  или других сайтах ООО «АВАНГАРД-НЕВА» , вы даете своё согласие на получение рассылки материалов рекламного и/или информационного характера посредством SMS-сервисов, электронной почты и т.д. от ООО «АВАНГАРД-НЕВА» , ИНН 7814472301, ОГРН 1107847206169. и поддтверждаете, что ознакомились политикой конфиденциальности, соглашением на обработку персональных данных и соглашением на рассылку рекламных материалов.
+                        .ysa-terms-part
+                            h2 Политика конфиденциальности
+                            p &nbsp;
+                            p Личная информация, которую собирает наша компания, и пути ее использования
+                            p Членов могут попросить предоставить определенную личную информацию при оегистрации на нашем сайте , в частности, имя, номер телефона, e-mail. Личная информация Членов, собранная при регистрации (или в любое другое время), преимущественно используется для подготовки Продуктов или Услуг в соответствии с вашими потребностями. Ваша информация не будет передана или продана третьим сторонам. Однако мы можем частично раскрывать личную информацию в особых случаях, описанных в нижеприведенном разделе «Разглашение».
+                        .ysa-terms-part
+                            h2 Разглашение
+                            p &nbsp;
+                            p Мы оставляем за собой право раскрывать информацию Членов и Гостей следующим третьим сторонам в следующих ситуациях:
+                            p Компаниям, работающим от нашего лица: ООО «АВАНГАРД-НЕВА» сотрудничает с другими компаниями, выполняющими от лица ООО «АВАНГАРД-НЕВА» функции бизнес-поддержки, в связи с чем ваша личная информация может быть частично раскрыта. Мы требуем, чтобы такие компании использовали информацию только в целях предоставления услуг по договору; им запрещается передавать данную информацию другим сторонам в ситуациях, отличных от случаев, когда это вызвано необходимостью предоставления оговоренных услуг. Примеры функций бизнес-поддержки: выполнение заказов, реализация заявок, выдача призов и бонусов, проведение опросов среди клиентов и управление информационными системами. Мы также раскрываем обобщенную неперсонифицированную информацию при выборе поставщиков услуг.
+                            p &nbsp;
+                            p При передаче контроля над предприятием: ООО «АВАНГАРД-НЕВА»оставляет за собой право передавать ваши анкетные данные в связи с полной или частичной продажей или трансфертом нашего предприятия или его активов. При продаже или трансферте бизнеса ООО «АВАНГАРД-НЕВА» предоставит вам возможность отказаться от передачи информации о себе. В некоторых случаях это может означать, что новая организация не сможет далее предоставлять вам услуги или продукты, ранее предоставляемые ООО «АВАНГАРД-НЕВА»
+                            p Правоохранительным органам: ООО «АВАНГАРД-НЕВА» может без вашего на то согласия раскрывать персональную информацию третьим сторонам по любой из следующих причин: во избежание нарушений закона, нормативных правовых актов или постановлений суда; участие в правительственных расследованиях; помощь в предотвращении мошенничества; а также укрепление или защита прав ООО «АВАНГАРД-НЕВА» или дочерних предприятий.
+                            p &nbsp;
+                            p С вашего согласия: Во всех остальных случаях перед передачей информации о вас третьим сторонам ООО «АВАНГАРД-НЕВА» обязуется получить ваше явное согласие. Например, ООО «АВАНГАРД-НЕВА» может реализовывать совместное предложение или конкурс с третьей стороной, тогда мы попросим у вас разрешение на совместное использование вашей личной информации с третьей стороной.
+
+                if(__.lang === "en")
+                    .ysa-terms
+                        .ysa-terms-part
+                            h2 User agreement to the collection of personal information
+                            p To the extent that the User submits personal information to the site yoursportagent.ru (hereafter – Site), via filling out online application fields (registration), the User:
+                            ul
+                                li Affirms that the personal data provided is the User’s own;
+                                li Acknowledges and affirms that the User carefully read and understood all Agreement terms referring to the processing of personal data submitted to the application fields during registration for the site;
+                                li Acknowledges and affirms that the User understands this Agreement and the terms of processing the User’s personal information;
+                                li Consents to the Site’s processing of submitted personal information for the purposes of registering the User on the Site;
+                                li Consents to the terms of processing personal data without any reservations or limitations.
+                            p The User consents to the processing of the User’s personal information, particularly involving the actions provided for by Clause 3, Pt. 2 of Article 3 of the Federal Law of July 27, 2006, No. 152-F3 “On Personal Data,” and confirms that by granting consent, the User acts freely, by his or her own will, and in his or her own interest.
+                            p The User’s consent to the processing of his or her personal data is particular, informed, and conscious.
+                            p The User’s consent applies to the processing of the following personal information:
+                            ul
+                                li Last name, first name, middle name;
+                                li Phone numbers;
+                                li Email addresses.
+                            p The User permits the service yoursportagent.ru to perform the following operations with the User’s personal information:
+                            ul
+                                li Collection and accumulation;
+                                li Storage for the duration accounted for in normative report documents, though no less than three years, from the date of the User’s termination of the use of the Site;
+                                li Updates (changes);
+                                li Using it for the purposes of registering the User on the Site;
+                                li Destruction;
+                                li Transference at court request, including third parties, with full observance of measures protecting personal information from unauthorized access.
+                            p The indicated agreement applies indefinitely from the date you submit information and may be withdrawn by you via submission of an application to the Site’s administration team which indicates the data specified in Article 14 of the Law “On Personal Data.”
+                            p Withdrawing an agreement to the processing of personal information may be accomplished via sending the applicable instructions in written form to the email address info@yoursportagent.ru.
+                            p The site is not responsible for third party use (both authorized and unauthorized) of the information the User provides to the Site, including its reproduction and distribution, accomplished in all possible ways.
+                            p The site retains the right to make changes to this Agreement.  When making changes, the current version indicates the last previous update.  The latest version of the Agreement comes into force at the time of its placement, unless otherwise indicated by the latest version of the Agreement.
+                            p The current version can always be found at: http://yoursportagent.ru/terms/
+                            p This Agreement, and the relationship between the User and the Site arising in conjunction with this Agreement, shall be applicable to the material and procedural law of the Russian Federation.
+                            p The site’s technical means enable automatic recognition of the User’s network (IP) address.
+                            p Indicated information; email addresses of persons utilizing the Site’s interactive services and/or sending electronic messages to the addresses provided by the Site; automatically accumulated data regarding which web pages have been accessed by Users; other information (including that of a personal nature) – are stored utilizing the Site’s technical means.
+                            p Such data about the Site’s users, accumulated and stored by the Site’s technical means, are utilized solely for the purpose of: improving the method of presenting information on the Site, improving the service provided to the Site’s Users (visitors), identifying the most frequented internet pages (interactive services) of the Site, and maintaining statistics regarding site visitation.
+                        .ysa-terms-part
+                            h2 User agreement to the use of personal information
+                            p Within the framework of this User Agreement, the rules (hereafter – Rules) are the official document “Avangard-Neva” (hereafter – the Site Administrator), which determine the protocol for the processing and protection of information regarding individuals who utilize the services of the internet site yoursportagent.ru and its subdomains (hereafter – the Site).
+                            p In accordance with Clause 1 of Article 1 of the July 27, 2006 Federal Law of the Russian Federation No. 152-F3 “On Personal Data,” and within the framework of this Agreement, personal information is understood as: “Personal information – any information related to a determined or determinable individual (the subject of personal data), including the individual’s last name, first name, middle name, year, month, date, and place of birth, address, family, social, and property status, education, profession, income, other information.”
+                            p The purpose of these Rules is the protection of individual information, the subjects of personal information (hereafter – User), including their personal information, from unauthorized access and disclosure.
+                            p Relations connected to the collection, storage, dissemination, and protection of site User information are regulated by these Rules, other official documents of the Site Administrator, and the current legislation of the Russian Federation.
+                            p These Rules are a public document, accessible on the site to any internet User.  The Site Administrator reserves the right to change these Rules at any time.  The Users will be notified of any changes when the Site Administrator posts a new version of the Rules to the Site.
+                            p By registering for and utilizing the Site, the User expresses consent to the terms of these Rules.
+                            p When registering on the Site, the User is obligated to present the Site Administrator with reliable and up-to-date information, as well as the User’s necessary personal details in accordance with the form to be filled out during registration.
+                            p When using the Site, the User is prohibited from:
+                            ul
+                                li Creating multiple accounts;
+                                li Transfer accounts, user names, or passwords to third parties;
+                                li Register accounts under the name of a different person;
+                                li Distort information about the User, the User’s age, or relationships with other persons or organizations;
+                                li Utilize the software to carry out actions directed at violating the normative practices of the Site, its services, or Users’ personal pages.
+                            p The User assumes all responsibility for the information the User places on the Site, communicates to other Users, and for any interactions with other Users.
+                            p In the event of a User’s disagreement with these Rules or their updates, the User is obligated to cease utilizing the Site, after informing the Site Administrator in a predetermined order.
+                            p Accepting this Agreement via registering on the Site, the User affirms consent to the Administration’s processing of the User’s personal information, submitted during registration.  The processing of the User’s information occurs in accordance with the Russian Federation’s legislation.  In accordance with Clause 3, Article 1 of the Russian Federation’s Federal Law of July 27, 2006 No. 152-F3 “On Personal Data:” “The Processing of personal information entails actions (operations) undertaken with personal information, including collection, systematization, accumulation, storage, updating (changing, modifying), use, distribution (including transfer), depersonalization, blocking, destruction of personal data.”
+                            p In accordance with the law, the processing of personal information entails any action (operation) or set of actions (operations) performed with or without automation tools applied to personal information, including collection, recording, systematization, accumulation, storage, updating (changing, modifying), extraction, use, transfer (distribution, provision, access), depersonalization, blocking, deletion, destruction of personal data; consent is granted for 10 (ten) years.
+                            p In accepting this Agreement, the User affirms consent to receipt of SMS messages and email notifications.
+                            p Rights and obligations of Site Administrator:
+                            ul
+                                li The Site Administrator takes all necessary measures to protect against unauthorized access, modification, disclosure, or destruction of Users’ personal information;
+                                li The Site Administrator permits access to Users’ personal information only to those third parties to whom such information is necessary for facilitating the Site’s functioning, and also permits the use of the Users’ submitted personal information for the purposes of following the requirements of the Russian Federation’s current legislation (including for the purposes of preventing and/or suppressing Users’ illegal and/or unlawful actions).
+                            p Consent to a newsletter: By subscribing to yoursportagent.ru or its subdomains, the User expresses consent to receive the distribution of marketing and/or informational materials through SMS services, electronic mail, etc. from “AVANGARD-NEVA” LLC, INN 7814472301, OGRN 1107847206169.
+                            p After you submit your information, you will occasionally receive a newsletter and notifications by email.  If you prefer not to receive information from us, you may opt out at any time by following the link at the end of each letter.
+                            p Using and/or inputting your information to the site yoursportagent.ru or its subdomains, or other sites of “AVANGARD-NEVA” LLC, you consent to receive the distribution of marketing and/or informative materials through SMS services, electronic mail, etc. from “AVANGARD-NEVA” LLC, INN 7814472301, OGRN 1107847206169 and affirm that you have familiarized yourself with the offer, privacy policy, data processing agreement, disclaimer, and agreement for distribution of marketing materials.
+                        .ysa-terms-part
+                            h2 Agreement to receipt of newsletter and marketing materials
+                            p I, in registering and/or submitting my information to the site yoursportagent.ru or its subdomains, or other sites of “AVANGARD-NEVA” LLC, for the purposes of accomplishing registration, give my consent to the receipt of marketing and/or informational materials through SMS services, electronic email, etc. from “AVANGARD-NEVA” LLC, INN 7814472301, OGRN 1107847206169.  In granting such consent, I affirm that I am freely acting by my own will and in my own interest, and am obligated to present reliable data necessary for registration.
+                            p I understand that at any time during the duration of this Agreement, I have the right to withdraw my consent to this Agreement, and unsubscribe to email newsletters by clicking on the appropriate link existing in every communication.
+                            p I also understand that if I have questions regarding withdrawal of consent, including SMS messages, I can apply for help by sending an email to the following address: info@yoursportagent.ru
+                            p Using and/or inputting your information to the site yoursportagent.ru or its subdomains, or other sites of “AVANGARD-NEVA” LLC, you consent to receive the distribution of marketing and/or informative materials through SMS services, electronic mail, etc. from “AVANGARD-NEVA” LLC, INN 7814472301, OGRN 1107847206169 and affirm that you have familiarized yourself with the privacy policy, data processing agreement, disclaimer, and agreement for distribution of marketing materials.
+                        .ysa-terms-part
+                            h2 Privacy Policy
+                            p The personal information our company collects, and the way it is used
+                            p Individuals may be prompted to present specific personal information while registering for our site, such as name, phone number, and email.  Personal information collected during registration (or at any other time) is used primarily to prepare the Products or Services in accordance with your needs.  Your information will not be transferred or sold to third parties.  However, personal information may be partially disclosed in special circumstances, described in the “Disclosure” section below.
+                        .ysa-terms-part
+                            h2 Disclosure
+                            p We retain the right to disclose information of individuals and guests to the following third parties in the following circumstances:
+                            p Companies working for us: “AVANGARD-NEVA” LLC cooperates with other companies which perform business support functions on behalf of “AVANGARD-NEVA” LLC, in relation to which your personal information may be partially disclosed.  We require that such companies utilize this information solely for the purposes of contractual services; they are prohibited from transmitting this information to third parties in any situation other than the requirement to provide agreed-upon services.  Examples of business support functions include: filling orders, implementing applications, distribution of prizes and bonuses, conducting surveys among clients, and managing information systems.  We also disclose general non-personal information when selecting service providers.
+                            p In case of transferring control of the venture: “AVANGARD-NEVA” LLC reserves the right to transfer your personal information in relation to the full or partial sale or transfer of our venture or its assets.  When selling or transferring a business, IP Maris Dresmanis will grant you the option of refusing the transmission of your personal information.  In some cases, this might mean that the new organization will be unable to continue providing you with products and services formerly provided by “AVANGARD-NEVA” LLC.
+                            p Law enforcement authorities: “AVANGARD-NEVA” LLC may, without your consent, disclose personal information to third parties for any of the following reasons: to avoid violating the law, normative legal activities or court order; participation in a government investigation; assistance in fraud prevention; along with ensuring or protecting the rights of “AVANGARD-NEVA” LLC or its subsidiaries.
+                            p With your consent: In all other circumstances, prior to the transfer of your information to third parties, “AVANGARD-NEVA” LLC agrees to obtain your express consent.  For example, “AVANGARD-NEVA” LLC may implement a joint offer or tender with a third party, in which case we will ask your permission to share your personal information with a third party.
+
+                +footer

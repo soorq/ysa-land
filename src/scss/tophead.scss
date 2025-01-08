@@ -1,0 +1,177 @@
+.ysa-tophead {
+    $root: &;
+
+    width: 100%;
+    overflow: hidden;
+    flex: 0 0 auto;
+
+    &-wrap {
+        padding: 23px 0;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 0 75px 0;
+        }
+
+        @media (min-width: $screen-md-min) {
+            padding: 0 0 20px 0;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            padding: 0 0 70px 0;
+        }
+
+        &.-lg {
+            padding: 25px 0 32px 0;
+
+            @media (min-width: $screen-sm-min) {
+                padding: 44px 0;
+            }
+
+            @media (min-width: $screen-md-min) {
+                padding: 48px 0 35px 0;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                padding: 47px 0 32px 0;
+            }
+
+            @media (min-width: $screen-xl-min) {
+                padding: 27px 0 48px 0;
+            }
+        }
+    }
+
+    &-container {
+        padding: 0 10px;
+
+        @media (min-width: $screen-sm-min) {
+            padding: 0 30px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            padding: 0 80px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            padding: 0 60px;
+        }
+    }
+
+    &-grid {
+        display: table;
+        width: 100%;
+
+        &-left {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        &-right {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: right;
+        }
+    }
+
+    &-nav {
+        &-back {
+            display: inline-block;
+            padding: 0 20px 0 0;
+            vertical-align: middle;
+
+            @media (min-width: $screen-sm-min) {
+                padding: 2px 50px 0 0;
+            }
+        }
+
+        &-title {
+            display: inline-block;
+            vertical-align: middle;
+
+            h1 {
+                margin: 0;
+                padding: 0;
+
+                font-size: 35px;
+                font-weight: bold;
+                font-style: italic;
+                letter-spacing: -0.2px;
+                text-transform: uppercase;
+
+                @media (min-width: $screen-sm-min) {
+                    font-size: 70px;
+                    letter-spacing: -0.32px;
+                }
+
+                @media (min-width: $screen-md-min) {
+                    font-size: 90px;
+                    letter-spacing: -0.41px;
+                }
+
+                @media (min-width: $screen-xl-min) {
+                    font-size: 110px;
+                    letter-spacing: -0.5px;
+                }
+            }
+
+            &.-sm {
+                max-width: 160px;
+
+                @media (min-width: $screen-sm-min) {
+                    max-width: 450px;
+                }
+
+                @media (min-width: $screen-md-min) {
+                    max-width: 550px;
+                }
+
+                @media (min-width: $screen-lg-min) {
+                    max-width: 920px;
+                }
+
+                h1 {
+                    @media (min-width: $screen-sm-min) {
+                        font-size: 40px;
+                        letter-spacing: -0.27px;
+                    }
+
+                    @media (min-width: $screen-md-min) {
+                        font-size: 50px;
+                        letter-spacing: -0.32px;
+                    }
+
+                    @media (min-width: $screen-xl-min) {
+                        font-size: 80px;
+                        letter-spacing: -0.36px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-num {
+        display: none;
+        opacity: 0.06;
+        font-size: 140px;
+        font-weight: bold;
+        letter-spacing: -5.03px;
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 160px;
+            letter-spacing: -6.82px;
+        }
+
+        @media (min-width: $screen-xl-min) {
+            font-size: 240px;
+            letter-spacing: -8.62px;
+        }
+    }
+
+    &.-inverse {
+        color: $color-base;
+    }
+}

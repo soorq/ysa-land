@@ -1,0 +1,36 @@
+mixin navbar(options)
+    - options = options || {};
+    .ysa-navbar&attributes(attributes)
+        a.ysa-navbar-logo(href="/")
+            span.ysa-navbar-logo-brand
+                +svgsprite('logo-brand')
+            span.ysa-navbar-logo-icon
+                +svgsprite('logo-icon')
+        a.ysa-navbar-toggle(data-toggle="modal", data-backdrop="false", data-target="#modal-burger" class=options.toggleClass)
+            +svgsprite('toggle')
+        .ysa-navbar-box
+            .ysa-navbar-grid
+                .ysa-navbar-grid-left
+                .ysa-navbar-grid-right
+                    .ysa-navbar-nav
+                        a.ysa-navbar-nav-item.-contacts(href="/contacts/")
+                            span.ysa-navbar-nav-item-text #{__.contacts.title}
+                            span.ysa-navbar-nav-item-icon
+                                +svgsprite('envelope')(style="font-size:18px")
+                        a.ysa-navbar-nav-item.-price(href="/price/")
+                            button.ysa-btn.ysa-btn_flat.-xs.-inverse
+                                span #{__.price.title}
+                        a.ysa-navbar-nav-item.-reg(href=(systemLink + "/login"))
+                            button.ysa-btn.ysa-btn_flat.-xs(class=options.buttonClass)
+                                span #{__.navbar.reg}
+                        .ysa-navbar-nav-item
+                            .ysa-dropdown.ysa-dropdown_main(class=options.langClass)
+                                a.ysa-dropdown_main-toggle(data-dropdown-toggle)
+                                    span.ysa-dropdown_main-toggle-text #{__.lng}
+                                    span.ysa-dropdown_main-toggle-arr
+                                        +svgsprite('caret-down')
+                                .ysa-dropdown_main-menu
+                                    a.ysa-dropdown_main-menu-item(href=selfDomainRu, class = (__.lang == "ru" ? "-active" : ""))
+                                        span #{__.navbar.lang[0]}
+                                    a.ysa-dropdown_main-menu-item(href=selfDomainEn, class=(__.lang == "en" ? "-active" : ""))
+                                        span #{__.navbar.lang[1]}

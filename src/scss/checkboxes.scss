@@ -1,0 +1,74 @@
+.ysa-checkbox {
+    &_box {
+        $this: &;
+
+        label {
+            display: block;
+            margin: 0 0 14px 0;
+
+            cursor: pointer;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            &:hover {
+                #{$this} {
+                    &-box {
+                        border-color: rgba($color-base, 0.5);
+                    }
+                }
+            }
+        }
+
+        &-wrap {
+            margin: 0 0 14px 0;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            z-index: -999;
+            left: -9999px;
+            opacity: 0;
+
+            &:focus {
+                ~ #{$this} {
+                    &-box {
+                        border-color: rgba($color-base, 0.5);
+                    }
+                }
+            }
+
+            &:checked {
+                ~ #{$this} {
+                    &-box {
+                        color: $color-base;
+                        background: $color-primary;
+                        border: none;
+                    }
+                }
+            }
+
+            &:disabled {
+                ~ #{$this} {
+                    &-box {
+                        cursor: default;
+                        color: rgba($color-base, 0.3);
+                    }
+
+                    &-text {
+                        cursor: default;
+                        opacity: 0.3;
+                    }
+                }
+            }
+        }
+    }
+}

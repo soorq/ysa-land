@@ -1,0 +1,127 @@
+extends /_includes/layout
+
+block title
+    title #{__.player.title}
+    meta(name='description', content="#{__.player.description}")
+
+block content
+    +navbar.-fixed
+
+    .ysa-wrap#wrap-main(data-controller="articleController", data-num="4")
+        .ysa-navbar-outer
+
+            .ysa-tophead
+                .ysa-tophead-wrap
+                    .ysa-tophead-container
+                        .ysa-tophead-grid
+                            .ysa-tophead-grid-left
+                                .ysa-tophead-nav
+                                    .ysa-tophead-nav-back(data-aos="fade-left")
+                                        a.ysa-btn.ysa-btn_back(href="/")
+                                            span.ysa-btn_back-ring
+                                            span.ysa-btn_back-shape
+                                                svg(viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;")
+                                                    path(d='M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z')
+                                            span.ysa-btn_back-arr
+                                                svg(viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;")
+                                                    path(d='M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z')
+                                                    path(d='M17,5.3 v1.4 h-13.9 v-1.4 h13.9z')
+                                    .ysa-tophead-nav-title(data-aos="fade-left", data-aos-delay="200")
+                                        h1 #{__.player.header}
+                            .ysa-tophead-grid-right(data-aos="fade-left", data-aos-delay="600")
+                                .ysa-tophead-num 05
+
+            .ysa-container
+
+                .ysa-preview.-first(data-aos="fade-up", style="background:#0A57F4")
+                    .ysa-preview-grid
+                        .ysa-preview-grid-left
+                            .ysa-preview-img(data-aos="fade-zoom-in")
+                                a(href="/assets/img/player/extra/1@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/1.png", srcset="/assets/img/player/1@2x.png 2x", alt)
+                        .ysa-preview-grid-right.-blackout
+                            .ysa-preview-header.-inverse(data-aos="fade-left")
+                                h3 #{__.player.text[0].header}
+                                .ysa-preview-more
+                                    a(href="/player/1/")
+                                        span Подробнее
+                                        +svgsprite('long-arrow-right')
+
+                .ysa-preview(data-aos="fade-up")
+                    .ysa-preview-grid.-reverse
+                        .ysa-preview-grid-left
+                            .ysa-preview-img(data-aos="fade-zoom-in")
+                                a(href="/assets/img/player/extra/3@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/3.png", srcset="/assets/img/player/3@2x.png 2x", alt)
+                        .ysa-preview-grid-right
+                            .ysa-preview-header(data-aos="fade-left")
+                                h3 #{__.player.text[2].header}
+                                .ysa-preview-more
+                                    a(href="/player/2/")
+                                        span Подробнее
+                                        +svgsprite('long-arrow-right')
+
+                .ysa-preview(data-aos="fade-up", style="background:#FBC500")
+                    .ysa-preview-grid
+                        .ysa-preview-grid-left
+                            .ysa-preview-img(data-aos="fade-zoom-in")
+                                a(href="/assets/img/player/extra/4@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/4.png", srcset="/assets/img/player/4@2x.png 2x", alt)
+                        .ysa-preview-grid-right.-blackout
+                            .ysa-preview-header.-inverse(data-aos="fade-left")
+                                h3 #{__.player.text[3].header}
+                                .ysa-preview-more
+                                    a(href="/player/3/")
+                                        span Подробнее
+                                        +svgsprite('long-arrow-right')
+
+                .ysa-preview(data-aos="fade-up")
+                    .ysa-preview-grid.-reverse
+                        .ysa-preview-grid-left
+                            .ysa-preview-img(data-aos="fade-zoom-in")
+                                a(href="/assets/img/player/extra/5@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/5.png", srcset="/assets/img/player/5@2x.png 2x", alt)
+                        .ysa-preview-grid-right
+                            .ysa-preview-header(data-aos="fade-left")
+                                h3 #{__.player.text[4].header}
+                                .ysa-preview-more
+                                    a(href="/player/4/")
+                                        span Подробнее
+                                        +svgsprite('long-arrow-right')
+
+                .ysa-preview(data-aos="fade-up", style="background:#02CCF1")
+                    .ysa-preview-grid
+                        .ysa-preview-grid-left
+                            .ysa-preview-img(data-aos="fade-zoom-in")
+                                a(href="/assets/img/player/extra/2@2x.png", data-fancybox="gallery"): img(src="/assets/img/player/2.png", srcset="/assets/img/player/2@2x.png 2x", alt)
+                        .ysa-preview-grid-right.-blackout
+                            .ysa-preview-header.-inverse(data-aos="fade-left")
+                                h3 #{__.player.text[1].header}
+                                .ysa-preview-more
+                                    a(href="/player/5/")
+                                        span Подробнее
+                                        +svgsprite('long-arrow-right')
+
+                .ysa-outro
+                    .ysa-outro-back(data-aos="fade-up")
+                        .ysa-outro-bg
+                    .ysa-outro-front
+                        .ysa-outro-grid
+                            .ysa-outro-grid-row
+                                .ysa-outro-grid-col(data-aos="zoom-in")
+                                    a.ysa-outro-item(href="/scout/")
+                                        span #{__.intro.slides[1].header}
+                                .ysa-outro-grid-col(data-aos="zoom-in")
+                                    a.ysa-outro-item(href="/agent/")
+                                        span #{__.intro.slides[2].header}
+                                .ysa-outro-grid-col(data-aos="zoom-in")
+                                    a.ysa-outro-item.-active(href="/player/")
+                                        span #{__.intro.slides[4].header}
+                            .ysa-outro-grid-row
+                                .ysa-outro-grid-col
+                                .ysa-outro-grid-col(data-aos="zoom-in")
+                                    a.ysa-outro-item(href="/coach/")
+                                        span #{__.intro.slides[3].header}
+                                .ysa-outro-grid-col
+                                .ysa-outro-grid-col(data-aos="zoom-in")
+                                    a.ysa-outro-item(href="/club/")
+                                        span #{__.intro.slides[0].header}
+                                .ysa-outro-grid-col
+
+                +footer

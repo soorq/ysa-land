@@ -1,0 +1,135 @@
+.ysa-outro {
+    $root: &;
+
+    position: relative;
+
+    @media (min-width: $screen-lg-min) {
+        height: 785px;
+    }
+
+    &-back {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        @media (min-width: $screen-lg-min) {
+            display: block;
+        }
+    }
+
+    &-front {
+        position: relative;
+        z-index: 2;
+
+        @media (min-width: $screen-lg-min) {
+            padding: 100px 0;
+        }
+    }
+
+    &-bg {
+        height: 100%;
+        width: 100%;
+
+        background-image: url(/assets/img/outro/1.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &-grid {
+        &-row {
+            width: 100%;
+            text-align: center;
+
+            @media (min-width: $screen-sm-min) {
+                display: table;
+                table-layout: fixed;
+            }
+        }
+
+        &-col {
+            padding: 14px 0;
+
+            &:empty {
+                padding: 0;
+            }
+
+            @media (min-width: $screen-sm-min) {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 58px 0;
+            }
+
+            @media (min-width: $screen-md-min) {
+                padding: 73px 0;
+            }
+
+            @media (min-width: $screen-lg-min) {
+                padding: 112px 0;
+            }
+        }
+    }
+
+    &-item {
+        position: relative;
+        display: inline-block;
+        padding: 0 5px;
+
+        font-size: 30px;
+        font-weight: bold;
+        font-style: italic;
+        letter-spacing: -0.14px;
+        text-transform: uppercase;
+
+        transition: all 0.3s;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 40px;
+            letter-spacing: -0.18px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 50px;
+            letter-spacing: -0.23px;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            margin: -2px 0 0 0;
+            height: 2px;
+            width: 100%;
+            transform: scaleX(0);
+
+            background: currentColor;
+
+            transition: transform 0.3s;
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-info;
+            text-decoration: none;
+
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+
+        &.-active {
+            cursor: default;
+            color: $color-primary;
+            pointer-events: none;
+
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}

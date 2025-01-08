@@ -1,0 +1,19 @@
+- var systemLink = ENV == "production" ? "//platform.yoursportagent.com" : "//ysa.dev.cuberto.com"
+- var selfDomainRu = ENV == "production" ? "//yoursportagent.ru" : "//ysa-landing-ru.dev.cuberto.com"
+- var selfDomainEn = ENV == "production" ? "//yoursportagent.com" : "//ysa-landing.dev.cuberto.com"
+doctype html
+html(lang='#{__.lang}', class="no-js")
+    head
+        include head
+    body
+        include mixins/svgsprite
+        include navbar
+        include footer
+        include loader
+        include burger
+
+        block content
+            span no content provied
+
+        include modals/register
+        include scripts
