@@ -1,9 +1,0 @@
-{
-    "rtl": false,
-    "locale": "ru",
-    "js": {
-        "vendor": {
-            "append": ["./src/js/vendor/gsap/plugins/MorphSVGPlugin.js"]
-        }
-    }
-}

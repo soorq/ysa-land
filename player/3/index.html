@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js" lang="#{__.lang}">
+  <head>
+    <meta charset="utf-8">
+    <title>Отправка портфолио агентам для игроков — YSA</title>
+    <meta name="description" content="Отправка портфолио агентам для игроков в платформе YSA">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="cmsmagazine" content="17ded5a9362aae72cf758d760240d50b">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="/assets/css/main.css?v=1.0.6">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0a57f4">
+  </head>
+  <body>
+    <div class="ysa-loader ysa-loader_overlay -visible">
+      <div class="ysa-loader_overlay-bg"></div>
+      <div class="ysa-loader_overlay-img"><img src="/assets/img/loader/1.gif" alt></div>
+    </div>
+    <div class="ysa-modal ysa-modal_full" id="modal-burger">
+      <div class="ysa-modal_full-close"><a data-dismiss="modal">
+              <svg class="ysa-svgsprite -times">
+                <use xlink:href="/assets/img/sprites/svgsprites.svg#times"></use>
+              </svg></a></div>
+      <div class="ysa-modal_full-dialog">
+        <div class="ysa-burger"><a class="ysa-burger-item" href="/contacts/">Контакты</a><a class="ysa-burger-item" href="/price/">
+            <button class="ysa-btn ysa-btn_flat -xl"><span>Прайс-лист</span></button></a><a class="ysa-burger-item" href="//ysa.dev.cuberto.com/login">
+            <button class="ysa-btn ysa-btn_flat -xl -white"><span>Вход</span></button></a>
+          <div class="ysa-burger-lang"><a class="ysa-burger-lang-item -active" href="//ysa-landing-ru.dev.cuberto.com">Рус</a><a class="ysa-burger-lang-item" href="//ysa-landing.dev.cuberto.com">Eng</a></div>
+        </div>
+      </div>
+    </div>
+        <div class="ysa-navbar -fixed"><a class="ysa-navbar-logo" href="/"><span class="ysa-navbar-logo-brand">
+                  <svg class="ysa-svgsprite -logo-brand">
+                    <use xlink:href="/assets/img/sprites/svgsprites.svg#logo-brand"></use>
+                  </svg></span><span class="ysa-navbar-logo-icon">
+                  <svg class="ysa-svgsprite -logo-icon">
+                    <use xlink:href="/assets/img/sprites/svgsprites.svg#logo-icon"></use>
+                  </svg></span></a><a class="ysa-navbar-toggle" data-toggle="modal" data-backdrop="false" data-target="#modal-burger">
+                <svg class="ysa-svgsprite -toggle">
+                  <use xlink:href="/assets/img/sprites/svgsprites.svg#toggle"></use>
+                </svg></a>
+          <div class="ysa-navbar-box">
+            <div class="ysa-navbar-grid">
+              <div class="ysa-navbar-grid-left"></div>
+              <div class="ysa-navbar-grid-right">
+                <div class="ysa-navbar-nav"><a class="ysa-navbar-nav-item -contacts" href="/contacts/"><span class="ysa-navbar-nav-item-text">Контакты</span><span class="ysa-navbar-nav-item-icon">
+                          <svg class="ysa-svgsprite -envelope" style="font-size:18px;">
+                            <use xlink:href="/assets/img/sprites/svgsprites.svg#envelope"></use>
+                          </svg></span></a><a class="ysa-navbar-nav-item -price" href="/price/">
+                    <button class="ysa-btn ysa-btn_flat -xs -inverse"><span>Прайс-лист</span></button></a><a class="ysa-navbar-nav-item -reg" href="//ysa.dev.cuberto.com/login">
+                    <button class="ysa-btn ysa-btn_flat -xs"><span>Вход</span></button></a>
+                  <div class="ysa-navbar-nav-item">
+                    <div class="ysa-dropdown ysa-dropdown_main"><a class="ysa-dropdown_main-toggle" data-dropdown-toggle><span class="ysa-dropdown_main-toggle-text">Рус</span><span class="ysa-dropdown_main-toggle-arr">
+                              <svg class="ysa-svgsprite -caret-down">
+                                <use xlink:href="/assets/img/sprites/svgsprites.svg#caret-down"></use>
+                              </svg></span></a>
+                      <div class="ysa-dropdown_main-menu"><a class="ysa-dropdown_main-menu-item -active" href="//ysa-landing-ru.dev.cuberto.com"><span>Рус</span></a><a class="ysa-dropdown_main-menu-item" href="//ysa-landing.dev.cuberto.com"><span>Eng</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <div class="ysa-wrap" id="wrap-main" data-controller="articleController">
+      <div class="ysa-navbar-outer">
+        <div class="ysa-tophead">
+          <div class="ysa-tophead-wrap">
+            <div class="ysa-tophead-container">
+              <div class="ysa-tophead-grid">
+                <div class="ysa-tophead-grid-left">
+                  <div class="ysa-tophead-nav">
+                    <div class="ysa-tophead-nav-back -top" data-aos="fade-left"><a class="ysa-btn ysa-btn_back" href="/player/"><span class="ysa-btn_back-ring"></span><span class="ysa-btn_back-shape">
+                          <svg viewBox="0 0 43 38" style="enable-background:new 0 0 43 38;">
+                            <path d="M32.9,19 L32.9,0.1,16.5,9.5,0.1,19,16.5,28.5,32.9,37.9,32.9,19z"></path>
+                          </svg></span><span class="ysa-btn_back-arr">
+                          <svg viewBox="0 0 18 12" style="enable-background:new 0 0 18 12;">
+                            <path d="M7.9,11.6 L0.7,5.8,7.9,0.4,9.1,1.9,3.9,5.9,9.1,10.1,7.9,11.6z"></path>
+                            <path d="M17,5.3 v1.4 h-13.9 v-1.4 h13.9z"></path>
+                          </svg></span></a></div>
+                    <div class="ysa-tophead-nav-title -sm" data-aos="fade-left" data-aos-delay="200">
+                      <h1>Отправлять портфолио агентам</h1>
+                    </div>
+                  </div>
+                </div>
+                <div class="ysa-tophead-grid-right">
+                  <div class="ysa-tophead-num">&nbsp;</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ysa-container">
+          <div class="ysa-brief">
+            <div class="ysa-brief-container">
+              <div class="ysa-brief-img" data-aos="fade-down"><a href="/assets/img/player/extra/4@2x.png" data-fancybox="gallery"><img src="/assets/img/player/extra/4.png" srcset="/assets/img/player/extra/4@2x.png 2x" alt></a></div>
+              <div class="ysa-brief-text" data-aos="fade-up">
+                <p>Найти и заинтересовать хорошего агента в реальной жизни нелегко. Не у всех есть нужные знакомства и дар убеждения. На нашем ресурсе у игрока есть возможность отправить заявку агенту. Общение сразу будет предметным и вы сможете наглядно продемонстрировать все навыки и возможности для развития.</p>
+                <p>YourSportAgent не оказывает агентских услуг! Мы не занимаемся продвижением игроков. Мы создали, разработали и развиваем профессиональный инструмент, который вы используете самостоятельно. Мы лишь помогаем в этом.</p>
+                <p>Оценивайте агента так же, как он оценивает вас. Если игрок хочет обратиться к определенному агенту или ему поступило предложение, он сможет изучить профайл агента и сделать выводы о перспективах сотрудничества.</p>
+                <p>Сократите до минимума количество ненужных встреч, поездок и переговоров. Если игрок живет в провинции и хочет найти агента в столице, это не значит, что ему придется собирать чемоданы и ехать за тысячи километров. Все предварительные переговоры можно провести удаленно, избавив себя как от лишних затрат, так и от разочарований.</p>
+              </div>
+            </div>
+          </div>
+              <div class="ysa-footer">
+                <div class="ysa-footer-container">
+                  <div class="ysa-footer-grid">
+                    <div class="ysa-footer-grid-left"><a class="ysa-footer-dev" href="http://cuberto.ru/" target="_blank"><span class="ysa-footer-dev-text">Дизайн и разработка:</span><span class="ysa-footer-dev-logo"><i class="ysa-sprite -cuberto-logo"></i></span></a></div>
+                    <div class="ysa-footer-grid-right">
+                      <div class="ysa-footer-social"><a class="ysa-footer-social-item" href="https://vk.com/yoursportagent" target="_blank"><span class="ysa-footer-social-item-icon">
+                                <svg class="ysa-svgsprite -vk" style="font-size:21px;">
+                                  <use xlink:href="/assets/img/sprites/svgsprites.svg#vk"></use>
+                                </svg></span><span class="ysa-footer-social-item-text">Вконтакте</span></a><a class="ysa-footer-social-item" href="https://www.facebook.com/yoursportagent.ru" target="_blank"><span class="ysa-footer-social-item-icon">
+                                <svg class="ysa-svgsprite -facebook" style="font-size:16px;">
+                                  <use xlink:href="/assets/img/sprites/svgsprites.svg#facebook"></use>
+                                </svg></span><span class="ysa-footer-social-item-text">Facebook</span></a><a class="ysa-footer-social-item" href="https://www.instagram.com/yoursportagent/" target="_blank"><span class="ysa-footer-social-item-icon">
+                                <svg class="ysa-svgsprite -instagram" style="font-size:17px;">
+                                  <use xlink:href="/assets/img/sprites/svgsprites.svg#instagram"></use>
+                                </svg></span><span class="ysa-footer-social-item-text">Instagram</span></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="ysa-modal ysa-modal_full" id="modal-register" data-controller="registerController">
+      <div class="ysa-modal_full-close"><a data-dismiss="modal">
+              <svg class="ysa-svgsprite -times">
+                <use xlink:href="/assets/img/sprites/svgsprites.svg#times"></use>
+              </svg></a></div>
+      <div class="ysa-modal_full-dialog">
+        <div class="ysa-regbox">
+          <div class="ysa-regbox-grid">
+            <div class="ysa-regbox-grid-col">
+              <div class="ysa-regbox-page -visible" id="regbox-reg">
+                <div class="ysa-regbox-container">
+                  <div class="ysa-regbox-header">
+                    <h2>Регистрация</h2>
+                    <div class="ysa-regbox-subheader">Оставьте свои контактные данные, чтобы мы могли оповестить вас о запуске сайта</div>
+                  </div>
+                  <div class="ysa-regbox-form">
+                    <form class="ysa-form" method="post" action="/report.php">
+                      <div class="ysa-form-group">
+                        <div class="ysa-dropdown ysa-dropdown_select"><a class="ysa-dropdown_select-toggle"><span class="ysa-dropdown_select-toggle-text">Клуб</span><span class="ysa-dropdown_select-toggle-arr">
+                                  <svg class="ysa-svgsprite -caret-down">
+                                    <use xlink:href="/assets/img/sprites/svgsprites.svg#caret-down"></use>
+                                  </svg></span></a>
+                          <div class="ysa-dropdown_select-menu">
+                            <div class="ysa-dropdown_select-menu-item">
+                              <label>
+                                <input type="radio" name="role" value="Клуб" checked><span>Клуб</span>
+                              </label>
+                            </div>
+                            <div class="ysa-dropdown_select-menu-item">
+                              <label>
+                                <input type="radio" name="role" value="Скаут"><span>Скаут</span>
+                              </label>
+                            </div>
+                            <div class="ysa-dropdown_select-menu-item">
+                              <label>
+                                <input type="radio" name="role" value="Агент"><span>Агент</span>
+                              </label>
+                            </div>
+                            <div class="ysa-dropdown_select-menu-item">
+                              <label>
+                                <input type="radio" name="role" value="Тренер"><span>Тренер</span>
+                              </label>
+                            </div>
+                            <div class="ysa-dropdown_select-menu-item">
+                              <label>
+                                <input type="radio" name="role" value="Игрок"><span>Игрок</span>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ysa-form-group">
+                        <input class="ysa-form-input -inverse" type="text" name="name" placeholder="Имя Фамилия" required>
+                      </div>
+                      <div class="ysa-form-group">
+                        <input class="ysa-form-input -inverse" type="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="ysa-form-group">
+                        <input class="ysa-form-input -inverse" type="tel" name="tel" placeholder="Номер телефона" pattern="[0-9\-\s\+\(\)]+" oninvalid="setCustomValidity('+7(999)000-11-22')" required>
+                      </div>
+                      <div class="ysa-form-submit">
+                        <div class="ysa-form-grid">
+                          <div class="ysa-form-grid-col">
+                            <button class="ysa-btn ysa-btn_flat" type="submit"><span>Зарегистрироваться</span></button>
+                          </div>
+                          <div class="ysa-form-grid-col">
+                            <button class="ysa-btn ysa-btn_flat -transparent"><span>Войти</span></button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ysa-form-agreement">Нажимая кнопку "Зарегистрироваться", я согласен(на) с правилами раздела <a href="/terms/">Условия соглашения</a>, также даю согласие на обработку своих персональных данных.</div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="ysa-regbox-page" id="regbox-success" style="display:none">
+                <div class="ysa-regbox-container">
+                  <div class="ysa-regbox-notice">
+                    <div class="ysa-regbox-header -fluid">
+                      <h2>Спасибо!</h2>
+                    </div>
+                    <div class="ysa-regbox-notice-text">
+                      <p>Старт запланирован на первый квартал 2018г.</p>
+                    </div>
+                    <div class="ysa-regbox-back">
+                      <button class="ysa-btn ysa-btn_flat" data-dismiss="modal"><span>Вернуться на сайт</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ysa-regbox-page" id="regbox-error" style="display:none">
+                <div class="ysa-regbox-container">
+                  <div class="ysa-regbox-notice">
+                    <div class="ysa-regbox-header -fluid">
+                      <h2>Ошибка!</h2>
+                    </div>
+                    <div class="ysa-regbox-notice-text">
+                      <p>При отправке формы произошла ошибка. Попробуйте снова.</p>
+                    </div>
+                    <div class="ysa-regbox-back">
+                      <button class="ysa-btn ysa-btn_flat"><span>Повторить</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCd0ulXR-bgxbs7ogHOp_hem5vTzfV3zp0&amp;language=en"></script>
+    <script src="/assets/js/vendor.js"></script>
+    <script src="/assets/js/bundle.js?v=1.0.6"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-125322649-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-125322649-1');
+      
+    </script>
+    <!-- Yandex Metrika-->
+    <script type="text/javascript">
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter45080940 = new Ya.Metrika({
+                      id:45080940,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true,
+                      triggerEvent: true,
+                  });
+              } catch(e) { }
+          });
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+      
+    </script>
+    <script type="text/javascript">
+      (function (w, d, nv, ls, yac){
+          var lwait = function (w, on, trf, dly, ma, orf, osf) { var pfx = "ct_await_", sfx = "_completed";  if(!w[pfx + on + sfx]) { var ci = clearInterval, si = setInterval, st = setTimeout , cmld = function () { if (!w[pfx + on + sfx]) {  w[pfx + on + sfx] = true; if ((w[pfx + on] && (w[pfx + on].timer))) { ci(w[pfx + on].timer);  w[pfx + on] = null;   }  orf(w[on]);  } };if (!w[on] || !osf) { if (trf(w[on])) { cmld();  } else { if (!w[pfx + on]) { w[pfx + on] = {  timer: si(function () { if (trf(w[on]) || ma < ++w[pfx + on].attempt) { cmld(); } }, dly), attempt: 0 }; } } }   else { if (trf(w[on])) { cmld();  } else { osf(cmld); st(function () { lwait(w, on, trf, dly, ma, orf); }, 0); } }} else {orf(w[on]);}};
+          var ct = function (w, d, e, c, n) { var a = 'all', b = 'tou', src = b + 'c' + 'h';  src = 'm' + 'o' + 'd.c' + a + src; var jsHost = "https://" + src, s = d.createElement(e); var jsf = function (w, d, s, h, c, n, yc) { if (yc !== null) { lwait(w, 'yaCounter'+yc, function(obj) { return (obj && obj.getClientID ? true : false); }, 50, 100, function(yaCounter) { s.async = 1; s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (yaCounter  && yaCounter.getClientID ? "ya_client_id" + yaCounter.getClientID() + ";" : "") + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":171110}") + ";"; p = d.getElementsByTagName(e)[0]; p.parentNode.insertBefore(s, p); }, function (f) { if(w.jQuery) {  w.jQuery(d).on('yacounter' + yc + 'inited', f ); }}); } else { s.async = 1; s.src = jsHost + "." + "r" + "u/d_client.js?param;" + (c ? "client_id" + c + ";" : "") + "ref" + escape(d.referrer) + ";url" + escape(d.URL) + ";cook" + escape(d.cookie) + ";attrs" + escape("{\"attrh\":" + n + ",\"ver\":171110}") + ";"; p = d.getElementsByTagName(e)[0]; p.parentNode.insertBefore(s, p); } }; if (!w.jQuery) { var jq = d.createElement(e); jq.src = jsHost + "." + "r" + 'u/js/jquery-1.7.min.js'; jq.onload = function () { lwait(w, 'jQuery', function(obj) { return (obj ? true : false); }, 30, 100, function () { jsf(w, d, s, jsHost, c, n, yac); }); }; p = d.getElementsByTagName(e)[0]; p.parentNode.insertBefore(jq, p); } else { jsf(w, d, s, jsHost, c, n, yac); } };
+          var gaid = function (w, d, o, ct, n) { if (!!o) { lwait(w, o, function (obj) {  return (obj && obj.getAll ? true : false); }, 200, (nv.userAgent.match(/Opera|OPR\//) ? 10 : 20), function (gaCounter) { var clId = null; try {  var cnt = gaCounter && gaCounter.getAll ? gaCounter.getAll() : null; clId = cnt && cnt.length > 0 && !!cnt[0] && cnt[0].get ? cnt[0].get('clientId') : null; } catch (e) { console.warn("Unable to get clientId, Error: " + e.message); } ct(w, d, 'script', clId, n); }, function (f) { w[o](function () {  f(w[o]); })});} else{ ct(w, d, 'script', null, n); }};
+          var cid  = function () { try { var m1 = d.cookie.match('(?:^|;)\\s*_ga=([^;]*)');if (!(m1 && m1.length > 1)) return null; var m2 = decodeURIComponent(m1[1]).match(/(\d+\.\d+)$/); if (!(m2 && m2.length > 1)) return null; return m2[1]} catch (err) {}}();
+          if (cid === null && !!w.GoogleAnalyticsObject){
+              if (w.GoogleAnalyticsObject=='ga_ckpr') w.ct_ga='ga'; else w.ct_ga = w.GoogleAnalyticsObject;
+              if (typeof Promise !== "undefined" && Promise.toString().indexOf("[native code]") !== -1){new Promise(function (resolve) {var db, on = function () {  resolve(true)  }, off = function () {  resolve(false)}, tryls = function tryls() { try { ls && ls.length ? off() : (ls.x = 1, ls.removeItem("x"), off());} catch (e) { nv.cookieEnabled ? on() : off(); }};w.webkitRequestFileSystem ? webkitRequestFileSystem(0, 0, off, on) : "MozAppearance" in d.documentElement.style ? (db = indexedDB.open("test"), db.onerror = on, db.onsuccess = off) : /constructor/i.test(w.HTMLElement) ? tryls() : !w.indexedDB && (w.PointerEvent || w.MSPointerEvent) ? on() : off();}).then(function (pm){
+                  if (pm){gaid(w, d, w.ct_ga, ct, 2);}else{gaid(w, d, w.ct_ga, ct, 3);}})}else{gaid(w, d, w.ct_ga, ct, 4);}
+          }else{ct(w, d, 'script', cid, 1);}})
+      (window, document, navigator, localStorage, 45080940);
+    </script>
+    <noscript>
+      <div><img src="https://mc.yandex.ru/watch/45080940" style="position:absolute; left:-9999px;" alt=""></div>
+    </noscript>
+  </body>
+</html>

@@ -1,9 +1,0 @@
-.idea/
-nbproject/
-node_modules/
-bower_components/
-coverage/
-dist/
-tmp/
-src/scss/generated
-
