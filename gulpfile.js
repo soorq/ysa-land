@@ -21,6 +21,7 @@ var $ = require("gulp-load-plugins")({
     pattern: ["gulp-*", "gulp.*", "del", "merge-stream", "vinyl-buffer"],
 });
 var webpack = require("webpack-stream");
+var ghPages = require("gulp-gh-pages");
 
 /* Error handler closure */
 function errorHandler(task, title) {
@@ -275,6 +276,16 @@ gulp.task("copy:bower", function () {
     return gulp
         .src(["./bower_components/**/*"])
         .pipe(gulp.dest("./dist/bower_components"));
+});
+
+gulp.task("deploy", function () {
+    return gulp.src(["./dist/**/*"]).pipe(
+        ghPages({
+            branch: "main",
+            push: true,
+            remoteUrl: "https://github.com/soorq/ysa-land.git",
+        })
+    );
 });
 
 /* Other tasks */
